@@ -57,11 +57,61 @@ h2 {
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
 }
 
 .container {
     width: 30;
     height: 40;
+}
+
+/*
+.flex-container {
+    display:inline-flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-between;
+    flex-basis: auto;
+} 
+
+.flex-item {
+    justify-content: space-between;
+}
+
+
+nav ul {
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+.row {
+    display:flex;
+}
+
+.column {
+    flex-grow: 1;
+}
+*/
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+nav li {
+    display: inline;
+}
+
+header h1 {
+    left: 0;
+    top:0;
+}
+
+.flex-box {
+    justify-content: space-between;
+    flex-grow: 1;
 }

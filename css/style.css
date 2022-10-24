@@ -9,6 +9,7 @@
 
 .nav li {
     display: inline;
+    color: white;
 
 }
 
@@ -97,7 +98,7 @@ nav ul {
 */
 
 nav ul {
-    display: flex;
+    display: inline flex;
     justify-content: space-between;
     padding: 1em;
 }
@@ -114,4 +115,5 @@ header h1 {
 .flex-box {
     justify-content: space-between;
     flex-grow: 1;
+    display: inline flex;
 }

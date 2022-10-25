@@ -10,6 +10,7 @@
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link href="css/style.css" rel="stylesheet">
   <link rel="icon" type="image/png" href="img/icon.png">
+  <script src="https://kit.fontawesome.com/abe438b1e3.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -17,25 +18,92 @@
     <nav class="nav prime-nav bg-dark font-white py-1">
       <div class="flex-box">
         <ul>
-            <li class="list"><a href="Mainpage.html">HOME</a></li>
-            <li class="list"><a href="Mainpage.html">DINING</a></li>
-            <li class="list"><a href="Mainpage.html">HOTELS</a></li>
-            <li class="list"><a href="Mainpage.html">ACTIVITIES</a></li>
-            <li class="list"><a href="Mainpage.html">ABOUT</a></li>
+          <li class="list"><a href="Mainpage.html">HOME</a></li>
+          <li class="list"><a href="information.html">DINING</a></li>
+          <li class="list"><a href="Mainpage.html">HOTELS</a></li>
+          <li class="list"><a href="Mainpage.html">ACTIVITIES</a></li>
+          <li class="list"><a href="about.html">ABOUT</a></li>
         </ul>
       </div>
     </nav>
-    <h1 class="brand-name brand-name-large">Shop Local Hawaii</h1>
+    <h1 class="web-name bg-dark font-white py-1">Shop Local Hawai'i</h1>
   </header>
 
   <main>
-    <div class="container">
-      <img src="img/mainpage.jpeg" alt="a picture of hawaiian islands"
-        width="900"
-        height="500">
+    <div class="upper-section">
+      <img class="mainpic" src="img/mainpage.jpeg" alt="a picture of hawaiian islands">
     </div>
 
+    <div class="middle-section section-divider">
+      <p class="intro overviewHeader">Support Hawai'i's indegenous population by planning your next visit
+        around local businesses! Explore our page for information about the best
+        indegenous owned restaurants, accomodation, and excursions.
+      </p>
 
+      <div class="card food">
+        <a href="information.html">
+          <img src="img/restaurant-card.jpg" alt="Restaurant" style="width:100%">
+          <div class="container">
+            <h4><b>Food & Drinks</b></h4>
+            <p>Best Local Eats</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card activities">
+        <a href="information.html">
+          <img src="img/activity-card.jpg" alt="Activities" style="width:100%">
+          <div class="container">
+            <h4><b>Activities</b></h4>
+            <p>Best Local Excursions</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card hotels">
+        <a href="information.html">
+          <img src="img/hotel-card.jpg" alt="Hotels" style="width:100%">
+          <div class="container">
+            <h4><b>Hotels</b></h4>
+            <p>Best Local Accomodations</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="lower-section section-divider">
+      <div class="container">
+      <img src="img/map-homepage2.jpg" alt="Map">
+      <button type="button" class="button">Explore by Island!</button>
+    </div>
+
+    </div>
+
+    <div class="footer bg-dark font-white py-1">
+      <div class="section1">
+        <h3>Helpful Links</h3>
+          <a href="#">About</a>
+          <a href="#">Outside Resources</a>
+          <a href="#">Contact</a>
+      </div>
+      <div class="section2">
+        <h3>Register Your Business</h3>
+        <form>
+          <input type="email" placeholder="Your Email Address" required>
+          <button type="submit">Register</button>
+        </form>
+      </div>
+      <div class="section3">
+        <h3>Contact</h3>
+        <p>University of Washington<br>Seattle, WA 98105</p>
+        <div class="socialmedia-links">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+      </div>
+
+    </div>
 </body>
 
 

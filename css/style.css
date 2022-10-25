@@ -2,13 +2,24 @@
     box-sizing: border-box;
 }
 
+html {
+    height:100%;
+}
+
+body {
+    height: inherit;
+}
+
 .nav {
     padding-bottom: 30px;
 }
 
 .nav li {
     display: inline;
+<<<<<<< HEAD
     color: white;
+=======
+>>>>>>> eunji
 }
 
 .nav a {
@@ -122,6 +133,7 @@ header h1 {
     background-color: lightskyblue;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 .mainpic {
     position: absolute;
@@ -283,6 +295,8 @@ h2{
 }
 
 =======
+=======
+>>>>>>> 334f2544e737c31cc248d090556e71b42cd735e5
 .info, a{
     color: black;
 }
@@ -302,5 +316,65 @@ h2{
 
 ul li{
     padding-left:0mm 10mm;
+<<<<<<< HEAD
 }
 >>>>>>> 134fae600ae319c2acebacce1f5cf276ac104cd9
+=======
+=======
+.googlemap {
+    width: 100%;
+}
+
+.mp-flexbox {
+    display: flex;
+}
+
+.left-panel {
+    flex-grow: 3;
+}
+
+.right-panel {
+    flex-grow: 1;
+}
+
+.card {
+    flex-direction: row;
+    margin: 15px 30px;
+    flex: 0 0 250px;
+    align-items: row;
+    /* height: 300px; */
+    display: flex;
+}
+
+.card-item {
+    max-width:100vh;
+    max-height:100vh;
+}
+
+.card img {
+    /* padding: 5px; */
+    /* width: 300px; */
+    max-width:400px;
+    max-height:200px;
+}
+
+.card > .one {
+    flex-basis: 1;
+}
+.card > .two {
+    display: flex;
+    flex-direction: column;
+    /* align-content: flex-start; */
+    flex-basis: 6;
+    margin: 15px;
+}
+
+.card p {
+    font-size: 2rem;
+}
+
+.features span {
+    border: 1px solid #000;
+>>>>>>> eunji
+}
+>>>>>>> 334f2544e737c31cc248d090556e71b42cd735e5

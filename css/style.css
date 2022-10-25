@@ -2,6 +2,13 @@
     box-sizing: border-box;
 }
 
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
+
 html {
     height:100%;
 }
@@ -192,6 +199,10 @@ span {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 0 1 24%;
 }
 
 .card:hover {

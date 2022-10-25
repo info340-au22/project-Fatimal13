@@ -1,15 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="en-US">
 
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
-  <meta name="author" content="Elisabeth, Eunji, Fatima, Rona" />
-  <meta name="description" content="This is a website that hopes to raise awareness in the importance of shopping
-  Indigenous-owned businesses in the Kingdom of Hawaii." />
 
-  <title>Shoplocalhawaii</title>
+  <title>Form</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -19,7 +15,8 @@
       href="img/icon.png">
 </head>
 
-<body>
+
+<body class="info-color">
     <nav class="nav prime-nav bg-dark text-white py-1">
         <ul class="flex-box">
             <li class="list"><a href="index.html">SHOP LOCAL HAWAII</a></li>
@@ -30,76 +27,62 @@
             <li class="list"><a href="forms.html">JOIN</a></li>
             <li class="list"><a href="about.html">ABOUT</a></li>
         </ul>
-      </nav>
+        </nav>
+    
+    <h1 class="brand-name brand-name-large">Advertise your business</h1>
+    
+    <main>
+        <section>
+            <form>
+                <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label for="name_input">Business Name:</label>
+                    <input type="name" name="name" id="name_input" placeholder="Business name" required>
+                </div>
 
-    <form>
-        <div class="form-row">
-        <div class="col-md-4 mb-3">
-            <label for="validationDefault01">First name</label>
-            <input type="text" class="form-control" id="validationDefault01" placeholder="First name" value="Mark" required>
-        </div>
-        <div class="col-md-4 mb-3">
-            <label for="validationDefault02">Last name</label>
-            <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" value="Otto" required>
-        </div>
-        <div class="col-md-4 mb-3">
-            <label for="validationDefaultUsername">Username</label>
-            <div class="input-group">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroupPrepend2">@</span>
-            </div>
-            <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Username" aria-describedby="inputGroupPrepend2" required>
-            </div>
-        </div>
-        </div>
-        <div class="form-row">
-        <div class="col-md-6 mb-3">
-            <label for="validationDefault03">City</label>
-            <input type="text" class="form-control" id="validationDefault03" placeholder="City" required>
-        </div>
-        <div class="col-md-3 mb-3">
-            <label for="validationDefault04">State</label>
-            <input type="text" class="form-control" id="validationDefault04" placeholder="State" required>
-        </div>
-        <div class="col-md-3 mb-3">
-            <label for="validationDefault05">Zip</label>
-            <input type="text" class="form-control" id="validationDefault05" placeholder="Zip" required>
-        </div>
-        </div>
-        <div class="form-group">
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-            <label class="form-check-label" for="invalidCheck2">
-            Agree to terms and conditions
-            </label>
-        </div>
-        </div>
-        <button class="btn btn-primary" type="submit" aria-label="Submit">Submit form</button>
-    </form>
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <label for="category_input">Business category:</label>
+                        <input type="text" name="category" id="category_input" placeholder="Accomodation" required>
+                </div>
 
-    <div class="footer bg-dark font-white py-1">
-        <div class="section1">
-          <h3>Helpful Links</h3>
-            <a href="#">About</a>
-            <a href="#">Outside Resources</a>
-            <a href="#">Contact</a>
-        </div>
-        <div class="section2">
-          <h3>Sign up for our newsletter!</h3>
-          <form>
-            <input type="email" placeholder="Your Email Address" required>
-            <button type="submit" aria-label="Submit" >Register</button>
-          </form>
-        </div>
-        <div class="section3">
-          <h3>Contact</h3>
-          <p>University of Washington<br>Seattle, WA 98105 &copy; 2022 </p>
-          <div class="socialmedia-links">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-twitter"></i>
-          </div>
-        </div>
-  
-      </div>
-</body>
+                <div class="col-md-4 mb-3">
+                    <label for="email_input">Email:</label>
+                    <input type="email" name="email" id="email_input" placeholder="email@domain.com" required>
+                </div>
+                </div>
+                <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="city">City:</label>
+                    <input type="city" name="city" id="city_input" placeholder="Honululu" required>
+                </div>
+            
+                <div class="col-md-3 mb-3">
+                    <label for="state">State:</label>
+                    <input type="state" name="state" id="state_input" placeholder="Hawaii" required>
+                </div>
+                
+                <div class="col-md-3 mb-3">
+                    <label for="zip">Zipcode:</label>
+                    <input type="zip" name="zip" id="zip_input" placeholder="Zip" required>
+                </div>
+                </div>
+                
+                <div class="col-md-3 mb-3">
+                    <label for="comment_field"> Description:</label>
+                    <textarea class="form-control" name="description" id="description"></textarea>
+                </div>
+                <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                    <label class="form-check-label" for="invalidCheck2">
+                    Agree to terms and conditions
+                    </label>
+                </div>
+                </div>
+                <button class="btn btn-primary" type="submit" aria-label="Submit">Submit form</button>
+            </form>
+        </section>
+    </main>
+    </body>
+    

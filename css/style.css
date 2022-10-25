@@ -17,13 +17,11 @@ body {
     height: inherit;
 }
 
-.nav {
-    padding-bottom: 30px;
-}
-
 .nav li {
     display: inline;
     color: white;
+    padding: 0 5%;
+    display: inline;
 }
 
 .nav a {
@@ -38,11 +36,10 @@ body {
     font-size: 1em;
     font-weight: lighter;
     border-bottom: 1px rgba(200, 200, 200, .3);
+    width: 100%; 
+    padding-bottom: 30px;
 }
 
-.nav li {
-    padding: 0 5%;
-}
 
 .nav a:hover {
     background-color: rgba(200, 200, 200, .3);
@@ -85,10 +82,6 @@ nav ul {
     display: inline flex;
     justify-content: space-between;
     padding: .5rem;
-}
-
-nav li {
-    display: inline;
 }
 
 header h1 {

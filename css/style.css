@@ -8,7 +8,7 @@
 
 .nav li {
     display: inline;
-
+    color: white;
 }
 
 .nav a {
@@ -20,7 +20,7 @@
 
 .nav {
     text-align: center;
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: lighter;
     border-bottom: 1px rgba(200, 200, 200, .3);
 }
@@ -89,9 +89,9 @@ nav ul {
 */
 
 nav ul {
-    display: flex;
+    display: inline flex;
     justify-content: space-between;
-    padding: 1em;
+    padding: .5rem;
 }
 
 nav li {
@@ -106,8 +106,23 @@ header h1 {
 .flex-box {
     justify-content: space-between;
     flex-grow: 1;
+    display: flex;
 }
 
+.container img {
+    width: 80%;
+}
+
+.about-color{
+    background-color: lightskyblue;
+}
+
+
+.info-color{
+    background-color: lightskyblue;
+}
+
+<<<<<<< HEAD
 .mainpic {
     position: absolute;
     width: 100%;
@@ -267,3 +282,25 @@ h2{
     margin-bottom: 10px;
 }
 
+=======
+.info, a{
+    color: black;
+}
+
+.image{
+    width: 300px;
+    height: 200px;
+}
+
+.caption {
+    display:inline;
+}
+
+.container {
+    text-align: center;
+}
+
+ul li{
+    padding-left:0mm 10mm;
+}
+>>>>>>> 134fae600ae319c2acebacce1f5cf276ac104cd9

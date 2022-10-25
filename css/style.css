@@ -141,7 +141,6 @@ header h1 {
     background-color: lightskyblue;
 }
 
-<<<<<<< HEAD
 .info, a{
     color: black;
 }
@@ -161,7 +160,7 @@ header h1 {
 
 ul li{
     padding-left:0mm 10mm;
-=======
+}
 .googlemap {
     width: 100%;
 }
@@ -216,5 +215,4 @@ ul li{
 
 .features span {
     border: 1px solid #000;
->>>>>>> eunji
 }

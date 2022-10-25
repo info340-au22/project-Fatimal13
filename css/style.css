@@ -2,6 +2,14 @@
     box-sizing: border-box;
 }
 
+html {
+    height:100%;
+}
+
+body {
+    height: inherit;
+}
+
 .nav {
     background-color: gray;
     padding-bottom: 30px;
@@ -9,7 +17,6 @@
 
 .nav li {
     display: inline;
-
 }
 
 .nav a {
@@ -114,4 +121,60 @@ header h1 {
 .flex-box {
     justify-content: space-between;
     flex-grow: 1;
+}
+
+.googlemap {
+    width: 100%;
+}
+
+.mp-flexbox {
+    display: flex;
+}
+
+.left-panel {
+    flex-grow: 3;
+}
+
+.right-panel {
+    flex-grow: 1;
+}
+
+.card {
+    flex-direction: row;
+    margin: 15px 30px;
+    flex: 0 0 250px;
+    align-items: row;
+    /* height: 300px; */
+    display: flex;
+}
+
+.card-item {
+    max-width:100vh;
+    max-height:100vh;
+}
+
+.card img {
+    /* padding: 5px; */
+    /* width: 300px; */
+    max-width:400px;
+    max-height:200px;
+}
+
+.card > .one {
+    flex-basis: 1;
+}
+.card > .two {
+    display: flex;
+    flex-direction: column;
+    /* align-content: flex-start; */
+    flex-basis: 6;
+    margin: 15px;
+}
+
+.card p {
+    font-size: 2rem;
+}
+
+.features span {
+    border: 1px solid #000;
 }

@@ -2,92 +2,77 @@
 <html lang="en-US">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>About</title>
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <!-- Need to add description & author -->
+  <meta name="description" content="Free Web tutorials">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link href="css/style.css" rel="stylesheet">
   <link rel="icon" type="image/png" href="img/icon.png">
+  <!--GOOGLE FONTS-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
 </head>
 
-<body class="about-color">
-    <nav class="nav prime-nav bg-dark text-white py-1">
-        <ul class="flex-box">
-            <li class="list"><a href="index.html">SHOP LOCAL HAWAII</a></li>
-            <li class="list"><a href="index.html">HOME</a></li>
-            <li class="list"><a href="information.html">DINING</a></li>
-            <li class="list"><a href="hotel-act.html">HOTELS</a></li>
-            <li class="list"><a href="hotel-act.html">ACTIVITIES</a></li>
-            <li class="list"><a href="forms.html">JOIN</a></li>
-            <li class="list"><a href="about.html">ABOUT</a></li>
+<!-- BODY -->
+
+<body>
+  <nav>
+    <div class="logo">
+      <img src="img/logo.jpg" alt="Logo Image">
+    </div>
+    <div class="hamburger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="dinning.html">DINING</a></li>
+      <li><a href="hotels.html">HOTELS</a></li>
+      <li><a href="activities.html">ACTIVITIES</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><button class="login-button" href="#">Login</button></li>
+      <li><button class="join-button" onclick="window.location.href='forms.html'">Join</button></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>ABOUT</h1>
+  </header>
+  <main>
+    <p>hello</p>
+    <p>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+      type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+      remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+      Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+      of Lorem Ipsum.
+    </p>
+
+
+  </main>
+  <!-- MAIN END-->
+
+  <footer>
+    <div class="footer">
+      <div class="ft-row">
+        <ul>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Our Services</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
         </ul>
-      </nav>
-    <h1 class="brand-name brand-name-large">About Shop Local Hawaii</h1>
-
-    <img class="rounded mx-auto d-block" src="../project-Fatimal13/img/about.jpeg" alt="a picture of hawaiian islands"
-    width="600"
-    height="300">
-    </header>
-
-    <section>
-        <h2>Our Why</h2>
-        <p>
-            The tourism industry fuels the Hawaiian economy, however, with millions of tourists entering the state each
-            year it is critical for the native population and environment that tourists spend their money at local,
-            Hawaiian owned businesses. Rather than supporting foreign tourism companies that do not help support the
-            local population and disregard the urbanizing effects of their efforts, visitors should be well educated on
-            the sustainable, locally-run businesses that are accessible to them on the islands. Unfortunately, this
-            information is not readily available as large corporations have taken over the tourism industry. Current
-            efforts, such as Shop Small Hawaii, provide resources for visitors to find local businesses on the islands.
-            However, sites like this one are typically not interactive, and do not include enough information to be able
-            to successfully plan an entire trip around. Our group’s goal is to create a one-stop site that provides all
-            of the necessary resources and tools to plan an entirely sustainable trip that supports the Native Hawaiian
-            population.
-        </p>
-    </section>
-
-    <section>
-        <h2>Purpose & Impact</h2>
-        <p>
-            This app will help shorten the inequality gap for Native Hawaiians who unproportionally bear the negative
-            effects of tourism in their homeland but only receive a tiny fraction of the tourism income. Although Hawaii
-            is well known for its beauty that attracted millions of tourists each year, most tourist weren’t aware of
-            their impact on Native Hawaiians, who are struggling to keep up with the cost of living. We want to bring
-            awareness of the importance of supporting local because it actually help people living in the community.
-        </p>
-    </section>
-
-    <section>
-        <h2>Contact The Team</h2>
-        <p> Elisabeth Helleberg: ehelle@uw.edu</p>
-        <p> Fatima Laghari: fatimal1@uw.edu</p>
-        <p> Eunji Ahn: eunjia@uw.edu</p>
-        <p> Rona Guo: rguo@uw.edu</p>
-
-        <div class="footer bg-dark font-white py-1">
-            <div class="section1">
-              <h3>Helpful Links</h3>
-                <a href="#">About</a>
-                <a href="#">Outside Resources</a>
-                <a href="#">Contact</a>
-            </div>
-            <div class="section2">
-              <h3>Sign up for our newsletter!</h3>
-              <form>
-                <input type="email" placeholder="Your Email Address" required>
-                <button type="submit" aria-label="Submit" >Register</button>
-              </form>
-            </div>
-            <div class="section3">
-              <h3>Contact</h3>
-              <p>University of Washington<br>Seattle, WA 98105 &copy; 2022 </p>
-              <div class="socialmedia-links">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-twitter"></i>
-              </div>
-            </div>
-      
-          </div>
+      </div>
+      <div class="ft-row">
+        University of Washington<br>Seattle, WA 98105 &copy; 2022
+      </div>
+    </div>
+  </footer>
 </body>
+
+</html>

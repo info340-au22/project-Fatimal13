@@ -212,21 +212,25 @@ nav {
 
 /* MAINPAGE */
 
+hr.dotted {
+    border-top: 5px dotted black;
+}
+
 /* Styling Header */
 
-#header-image{
+#header-image {
     top: 10px;
     position: relative;
 }
- 
-#header-image img{
+
+#header-image img {
     width: 100%;
     margin: 0;
     padding: 0;
     opacity: 0.75;
 }
 
-#header-txt{
+#header-txt {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -247,6 +251,7 @@ nav {
 h2 {
     font-weight: bold;
     text-align: center;
+    padding: 1rem;
 }
 
 p {
@@ -270,7 +275,7 @@ p {
     width: 50%;
 }
 
-.map-quiz img{
+.map-quiz img {
     width: 100%;
     height: auto;
 }
@@ -308,35 +313,61 @@ img {
     gap: 1em;
 }
 
-.lm-card{
+.lm-card {
     flex: 1 0 270px;
     background: white;
     margin: 1%;
     padding: 10px;
+    border-radius: 25px;
     box-shadow: 0 5px 10px black;
     align-self: normal;
 }
 
-.lm-card .lm-card-img{
+.lm-card .lm-card-img {
     width: 100%;
     height: 220px;
 }
 
-.lm-card .lm-card-img img{
+.lm-card .lm-card-img img {
     width: 100%;
     height: 100%;
+    border-radius: 25px;
 }
 
-.lm-card .lm-card-txt{
+.lm-card .lm-card-txt {
     padding: 10px;
     text-align: center;
 }
 
-h3{
+h3 {
     margin-bottom: 10px;
     font-size: 1.2rem;
 }
 
-.lm-card:hover{
-    box-shadow: 0 20px 25px;
+.lm-card:hover {
+    box-shadow: 0 20px 25px black;
+}
+
+/* Styling register button*/
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-button {
+    font-weight: bold;
+    font-size: 130%;
+    text-decoration: none;
+    background-color: #ABC9FF;
+    color: white;
+    height: fit-content;
+    padding: 2px 6px 2px 6px;
+    border-radius: 25px;
+    box-shadow: 0 5px 10px #6699f7;
+}
+
+.register-button:hover{
+    box-shadow: 0 15px 20px #6699f7;
 }

@@ -312,22 +312,42 @@ hr.dotted {
 }
 
 .map-quiz img {
-    width: 100%;
-    height: auto;
+    display: flex;
+    width: 60%;
+    height: 75%;
+    margin-left: auto;
+    margin-right: auto;
     opacity: .3;
 }
 
-.map-quiz .quiz-btn {
-    position: absolute;
-    top: 70%;
+.map-quiz .start-qz {
+    padding: 10px;
+    top: 60%;
     left: 20%;
-    background-color: #ABC9FF;
-    color: white;
-    border: black;
-    border-radius: 5px;
+    position: absolute;
 }
 
+.start-qz a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2.5rem;
+    background-color: #ABC9FF;
+    color: white;
+    height: fit-content;
+    padding: 2px 6px 2px 6px;
+    border-radius: 25px;
+    box-shadow: 0 5px 10px #6699f7;
+}
 
+.start-qz a:hover{
+    box-shadow: 0 10px 15px #6699f7;
+}
+
+@media (max-width:850px) {
+    .start-qz a {
+        font-size: 100%;
+    }
+}
 /* Styling Learn More Cards */
 
 .homepage img {

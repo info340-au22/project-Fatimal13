@@ -449,7 +449,7 @@ hr.dotted {
 
 
 
-/* HOTEL PAGE */
+/* HOTEL PAGE / ACTIVITIES / DINING */
 
 .card__list {
     max-width: 1200px;
@@ -554,4 +554,28 @@ hr.dotted {
     text-align: center;
     font-weight: 700;
     font-size: 1rem;
+}
+
+/* About */
+#about-image {
+    top: 10px;
+    position: relative;
+    bottom: 10px;
+}
+
+#about-image img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    opacity: 0.75;
+}
+
+#about-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: black;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: bold;
 }

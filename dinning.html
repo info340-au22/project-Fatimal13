@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-<head>
-  <meta charset="UTF-8">
-  <!-- Need to add description & author -->
-  <meta name="description" content="Free Web tutorials">
-  <meta name="author" content="John Doe">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- BOOTSTRAP -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <link href="css/style.css" rel="stylesheet">
-  <link rel="icon" type="image/png" href="img/icon.png">
-  <!--GOOGLE FONTS-->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
-
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <!-- Need to add description & author -->
+    <meta name="description" content="Shop Local Hawaii">
+    <meta name="author" content="Fatima, Eunji, Rona, Elisabeth">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoplocalhawaii</title>
+  
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+  </head>
+  
 
 <!-- BODY -->
 
@@ -44,13 +46,128 @@
     <h1>DINNING</h1>
   </header>
   <main>
-    <p>hello</p>
-    <p>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-    </p>
+    <div class="main-header">
+      <p class="border border-dark">Filters</p>
+    </div>
 
+    <section class="card__list row">
 
-  </main>
+          <div class="card__box col-md-6 col-sm-12"> <!-- /card__box -->
+            <div class="card">
+              <div class="card__img">
+                <img class="card__img-preview" src="img/jackie-rays-kona-interior-2.jpeg" alt="Jackie Rey's Ohana Grill">
+              </div>
+              <div class="card__content">
+                <h4 class="card__title"><a href="#">Jackie Rey's Ohana Grill</a></h4>
+                <p class="card__text"> 4 &#11088; </p>
+                <p class="card__description">Jackie Rey's Ohana Grill</p>
+                <div class="card__tags">
+                  <span class="border border-light badge bg-light text-dark">Seafood</span>
+                  <span class="border border-light badge bg-light text-dark">View Access</span>
+                  <span class="border border-light badge bg-light text-dark">Grill</span>
+                  <span class="border border-light badge bg-light text-dark">Bar</span>
+                  <span class="border border-light badge bg-light text-dark">Hawai'i Island</span>
+                </div>
+                <div class="card__bottom">
+                  <div class="options">
+                    <span class="date">Island : </span>
+                    <span class="category">Hawai'i </span>
+                  </div>
+                  <div class="card__price">
+                    $$
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card__box col-md-6 col-sm-12"> <!-- /card__box -->
+            <div class="card">
+              <div class="card__img">
+                <img class="card__img-preview" src="img/merrimans.jpeg" alt="Merriman’s Honolulu">
+              </div>
+              <div class="card__content">
+                <h4 class="card__title"><a href="#">Merriman’s Honolulu</a></h4>
+                <p class="card__text"> 4 &#11088; </p>
+                <p class="card__description">Merriman’s Honolulu</p>
+                <div class="card__tags">
+                  <span class="border border-light badge bg-light text-dark">Seafood</span>
+                  <span class="border border-light badge bg-light text-dark">View Access</span>
+                  <span class="border border-light badge bg-light text-dark">Live Music</span>
+                  <span class="border border-light badge bg-light text-dark">Dine In</span>
+                  <span class="border border-light badge bg-light text-dark">Oahu Island</span>
+                </div>
+                <div class="card__bottom">
+                  <div class="options">
+                    <span class="date">Island : </span>
+                    <span class="category">Oahu</span>
+                  </div>
+                  <div class="card__price">
+                    $$
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      <div class="card__box col-md-6 col-sm-12"> <!-- /card__box -->
+        <div class="card">
+          <div class="card__img">
+            <img class="card__img-preview" src="img/roysbarandgrill.png" alt="Roy’s Waikoloa Bar & Grill">
+          </div>
+          <div class="card__content">
+            <h4 class="card__title"><a href="#">Roy’s Waikoloa Bar & Grill</a></h4>
+            <p class="card__text"> 4 &#11088; </p>
+            <p class="card__description">Roy’s Waikoloa Bar & Grill</p>
+            <div class="card__tags">
+              <span class="border border-light badge bg-light text-dark">Seafood</span>
+              <span class="border border-light badge bg-light text-dark">View Access</span>
+              <span class="border border-light badge bg-light text-dark">Grill</span>
+              <span class="border border-light badge bg-light text-dark">Bar</span>
+              <span class="border border-light badge bg-light text-dark">Hawaiʻi Island</span>
+            </div>
+            <div class="card__bottom">
+              <div class="options">
+                <span class="date">Island : </span>
+                <span class="category">Hawaiʻi</span>
+              </div>
+              <div class="card__price">
+                $$$
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+
+        <div class="card__box col-md-6 col-sm-12"> <!-- /card__box -->
+          <div class="card">
+            <div class="card__img">
+              <img class="card__img-preview" src="img/lahaina.jpeg" alt="Lahaina Grill">
+            </div>
+            <div class="card__content">
+              <h4 class="card__title"><a href="#">Lahaina Grill</a></h4>
+              <p class="card__text"> 5 &#11088; </p>
+              <p class="card__description">Lahaina Grill</p>
+              <div class="card__tags">
+                <span class="border border-light badge bg-light text-dark">Seafood</span>
+                <span class="border border-light badge bg-light text-dark">Art</span>
+                <span class="border border-light badge bg-light text-dark">Winery</span>
+                <span class="border border-light badge bg-light text-dark">Elegant</span>
+                <span class="border border-light badge bg-light text-dark">Maui Island</span>
+              </div>
+              <div class="card__bottom">
+                <div class="options">
+                  <span class="date">Island : </span>
+                  <span class="category">Maui</span>
+                </div>
+                <div class="card__price">
+                  $$$$
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
   <!-- MAIN END-->
 
   <footer>

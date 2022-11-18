@@ -1,11 +1,12 @@
 import React from 'react';
 
+import { HotelsPage } from './HotelsPage.js'
 
 function App(props) {
   return (
     <div>
-      <HomePage />
-      {/* <HotelPage /> */}
+      {/* <HomePage /> */}
+      <HotelsPage />
       {/* <ActivityPage /> */}
       {/* <DinningPage /> */}
       {/* <FormPage /> */}

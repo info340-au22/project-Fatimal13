@@ -18,6 +18,7 @@
 
 body {
     overflow-x: hidden;
+<<<<<<< HEAD:css/style.css
 <<<<<<< HEAD
 }
 
@@ -315,6 +316,11 @@ img-box > img {
 } */
 =======
     background-color: #F3F8FF;
+=======
+    background: #e8e7e7;
+    min-height: 100%;
+    letter-spacing: 0.05em;
+>>>>>>> main:project-draft/css/style.css
 }
 
 header:not(.index) {
@@ -518,6 +524,9 @@ nav {
     }
 }
 
+
+
+
 /*
 body {
     margin: 0;
@@ -531,25 +540,26 @@ body {
 }
 */
 
-.mt-50{
+.mt-50 {
     margin-top: 50px;
 }
-.mb-50{
+
+.mb-50 {
     margin-bottom: 50px;
 }
 
 
-.bg-teal-400 { 
+.bg-teal-400 {
     background-color: #26a69a;
 }
 
-a{
+a {
     text-decoration: none !important;
 }
 
 
 .fa {
-        color: red;
+    color: red;
 }
 
 /* MAINPAGE */
@@ -604,7 +614,7 @@ hr.dotted {
 }
 
 @media (max-width:900px) {
-    p {
+    .homepage p {
         margin-left: 0%;
         margin-right: 0%;
     }
@@ -632,7 +642,7 @@ hr.dotted {
     position: absolute;
 }
 
-.start-qz a{
+.start-qz a {
     text-decoration: none;
     font-weight: bold;
     font-size: 2.5rem;
@@ -644,7 +654,7 @@ hr.dotted {
     box-shadow: 0 5px 10px #6699f7;
 }
 
-.start-qz a:hover{
+.start-qz a:hover {
     box-shadow: 0 10px 15px #6699f7;
 }
 
@@ -653,6 +663,7 @@ hr.dotted {
         font-size: 100%;
     }
 }
+
 /* Styling Learn More Cards */
 
 .homepage img {
@@ -737,7 +748,147 @@ hr.dotted {
     box-shadow: 0 5px 10px #6699f7;
 }
 
-.register-button:hover{
+.register-button:hover {
     box-shadow: 0 15px 20px #6699f7;
 }
+<<<<<<< HEAD:css/style.css
 >>>>>>> main
+=======
+
+
+
+
+
+
+
+/* HOTEL PAGE / ACTIVITIES / DINING */
+
+.card__list {
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 200px;
+    margin-bottom: 1.5rem;
+    transition: all 0.25s ease-in;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+@media(max-width: 756px) {
+    .card {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+.card__img {
+    flex: 1 40%;
+    overflow: hidden;
+    position: relative;
+}
+
+.card__img-preview {
+    display: block;
+    object-fit: cover;
+    margin: 0 auto;
+    min-width: 150px;
+    max-width: 100%;
+    min-height: 100%;
+}
+
+.card__content {
+    flex: 1 60%;
+    padding: 0.8rem;
+}
+
+.card__title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.card__title a {
+    color: #6699f7;
+}
+
+.card__text {
+    font-size: 0.6rem;
+    margin: 0;
+    margin-top: 0.3rem;
+    margin-left: 0.2rem;
+}
+
+.card__description {
+    font-size: 0.8rem;
+    margin: 0;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: #888;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 2rem;
+    line-height: 1rem;
+}
+
+.card__tags {
+    font-size: 0.8rem;
+    margin: 0;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: #4C4A4A;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 2rem;
+    line-height: 1rem;
+}
+
+.card__bottom {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    border-top: 1px solid #efefef;
+    text-align: right;
+    padding-top: 0.5rem;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.card__price {
+    color: #E35354;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+/* About */
+#about-image {
+    top: 10px;
+    position: relative;
+    bottom: 10px;
+}
+
+#about-image img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    opacity: 0.75;
+}
+
+#about-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: black;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: bold;
+}
+>>>>>>> main:project-draft/css/style.css

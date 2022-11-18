@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset="UTF-8">
+    <!-- Need to add description & author -->
+    <meta name="description" content="Shop Local Hawaii">
+    <meta name="author" content="Fatima, Eunji, Rona, Elisabeth">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoplocalhawaii</title>
+  
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+  </head>
+
+<!-- BODY -->
+
+<body>
+  <nav>
+    <div class="logo">
+      <img src="img/logo.jpg" alt="Logo Image">
+    </div>
+    <div class="hamburger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="dinning.html">DINING</a></li>
+      <li><a href="hotels.html">HOTELS</a></li>
+      <li><a href="activities.html">ACTIVITIES</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><button class="login-button" href="#">Login</button></li>
+      <li><button class="join-button" onclick="window.location.href='forms.html'">Join</button></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>ACTIVITIES</h1>
+  </header>
+  <main>
+    <div class="main-header">
+      <p class="border border-dark">Filters</p>
+    </div>
+      <section class="card__list row">
+
+        <div class="card__box col-md-6 col-sm-12">
+           <!-- /card__box -->
+          <div class="card">
+            <div class="card__img">
+              <img class="card__img-preview" src="img/voyagers-pacific-luau-dance.jpeg" alt="Picture of Voyagers of the Pacific">
+            </div>
+            <div class="card__content">
+              <h4 class="card__title"><a href="#">Voyagers of the Pacific</a></h4>
+              <p class="card__text"> 4 &#11088; </p>
+              <p class="card__description">Voyagers of the Pacific</p>
+              <div class="card__tags">
+                <span class="border border-light badge bg-light text-dark">Oceanfront</span>
+                <span class="border border-light badge bg-light text-dark">Luau</span>
+                <span class="border border-light badge bg-light text-dark">Food</span>
+                <span class="border border-light badge bg-light text-dark">Culture</span>
+                <span class="border border-light badge bg-light text-dark">Hawai'i Island</span>
+              </div>
+              <div class="card__bottom">
+                <div class="options">
+                  <span class="date">Island : </span>
+                  <span class="category">Hawai'i</span>
+                </div>
+                <div class="card__price">
+                  $$$
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card__box col-md-6 col-sm-12"> <!-- /card__box -->
+          <div class="card">
+            <div class="card__img">
+              <img class="card__img-preview" src="img/paradisecove.jpeg" alt="Picture of Paradise Cove Lū‘au">
+            </div>
+            <div class="card__content">
+              <h4 class="card__title"><a href="#">Paradise Cove Lū‘au</a></h4>
+              <p class="card__text"> 5 &#11088; </p>
+              <p class="card__description">Paradise Cove Lū‘au</p>
+              <div class="card__tags">
+                <span class="border border-light badge bg-light text-dark">Oceanfront</span>
+                <span class="border border-light badge bg-light text-dark">Luau</span>
+                <span class="border border-light badge bg-light text-dark">Live Music</span>
+                <span class="border border-light badge bg-light text-dark">Culture</span>
+                <span class="border border-light badge bg-light text-dark">Oahu Island</span>
+              </div>
+              <div class="card__bottom">
+                <div class="options">
+                  <span class="date">Island : </span>
+                  <span class="category">Oahu</span>
+                </div>
+                <div class="card__price">
+                  $$$$
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <div class="card__box col-md-6 col-sm-12"> <!-- /card__box -->
+        <div class="card">
+          <div class="card__img">
+            <img class="card__img-preview" src="img/oldlahaina.webp" alt="Picture of Old Lahaina Lū‘au">
+          </div>
+          <div class="card__content">
+            <h4 class="card__title"><a href="#">Old Lahaina Lū‘au</a></h4>
+            <p class="card__text"> 5 &#11088; </p>
+            <p class="card__description">Old Lahaina Lū‘au</p>
+            <div class="card__tags">
+              <span class="border border-light badge bg-light text-dark">Beachside</span>
+              <span class="border border-light badge bg-light text-dark">Luau</span>
+              <span class="border border-light badge bg-light text-dark">Food</span>
+              <span class="border border-light badge bg-light text-dark">Culture</span>
+              <span class="border border-light badge bg-light text-dark">Maui Island</span>
+            </div>
+            <div class="card__bottom">
+              <div class="options">
+                <span class="date">Island : </span>
+                <span class="category">Maui</span>
+              </div>
+              <div class="card__price">
+                $$$
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card__box col-md-6 col-sm-12"> <!-- /card__box -->
+        <div class="card">
+          <div class="card__img">
+            <img class="card__img-preview" src="img/Kauai.avif" alt="Picture of Grand Hyatt Kaua‘i Lū‘au">
+          </div>
+          <div class="card__content">
+            <h4 class="card__title"><a href="#">Grand Hyatt Kaua‘i Lū‘au</a></h4>
+            <p class="card__text"> 5 &#11088; </p>
+            <p class="card__description">Grand Hyatt Kaua‘i Lū‘au</p>
+            <div class="card__tags">
+              <span class="border border-light badge bg-light text-dark">Waterside</span>
+              <span class="border border-light badge bg-light text-dark">Luau</span>
+              <span class="border border-light badge bg-light text-dark">Food</span>
+              <span class="border border-light badge bg-light text-dark">Culture</span>
+              <span class="border border-light badge bg-light text-dark">Kaua'i Island</span>
+            </div>
+            <div class="card__bottom">
+              <div class="options">
+                <span class="date">Island : </span>
+                <span class="category">Kaua'i</span>
+              </div>
+              <div class="card__price">
+                $$$$
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="card__box col-md-6 col-sm-12"> <!-- /card__box -->
+        <div class="card">
+          <div class="card__img">
+            <img class="card__img-preview" src="img/molokai-mule-ride-to.jpeg" alt="Picture of Kalaupapa Mule Tour">
+          </div>
+          <div class="card__content">
+            <h4 class="card__title"><a href="#">Kalaupapa Mule Tour</a></h4>
+            <p class="card__text"> 5 &#11088; </p>
+            <p class="card__description">Kalaupapa Mule Tour</p>
+            <div class="card__tags">
+              <span class="border border-light badge bg-light text-dark">Nature</span>
+              <span class="border border-light badge bg-light text-dark">Tour</span>
+              <span class="border border-light badge bg-light text-dark">Historical</span>
+              <span class="border border-light badge bg-light text-dark">Culture</span>
+              <span class="border border-light badge bg-light text-dark">Lāna‘i and Moloka‘i Island</span>
+            </div>
+            <div class="card__bottom">
+              <div class="options">
+                <span class="date">Island : </span>
+                <span class="category">Lāna‘i and Moloka‘i</span>
+              </div>
+              <div class="card__price">
+                $$
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </main>
+  <!-- MAIN END-->
+
+  <footer>
+    <div class="footer">
+      <div class="ft-row">
+        <ul>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Our Services</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+      <div class="ft-row">
+        University of Washington<br>Seattle, WA 98105 &copy; 2022
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

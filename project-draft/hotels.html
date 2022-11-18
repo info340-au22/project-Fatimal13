@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Need to add description & author -->
+  <meta name="description" content="Free Web tutorials">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="img/icon.png">
+  <!--GOOGLE FONTS-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+
+</head>
+
+<!-- BODY -->
+
+<body>
+  <nav>
+    <div class="logo">
+      <img src="img/logo.jpg" alt="Logo Image">
+    </div>
+    <div class="hamburger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="dinning.html">DINING</a></li>
+      <li><a href="hotels.html">HOTELS</a></li>
+      <li><a href="activities.html">ACTIVITIES</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><button class="login-button" href="#">Login</button></li>
+      <!-- <li><button class="join-button" onclick="window.location.href='forms.html'">Join</button></li> -->
+      <li><a href="forms.html"><button class="join-button">Join</button></a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>HOTELS</h1>
+  </header>
+  <main>
+    <div class="main-header">
+      <p class="border border-dark">Filters</p>
+    </div>
+
+    <section class="card__list row">
+
+      <div class="card__box col-md-6 col-sm-12"> <!-- /card__box -->
+        <div class="card">
+          <div class="card__img">
+            <img class="card__img-preview" src="img/hotels/paiainn.jpg" alt="Paia Inn">
+          </div>
+          <div class="card__content">
+            <h4 class="card__title"><a href="#">Paia Inn</a></h4>
+            <p class="card__text"> 4.9 &#11088; </p>
+            <p class="card__description">Stylish hotel featuring quarters with bamboo floors & patios, plus free loaner beach gear.</p>
+            <div class="card__tags">
+              <span class="border border-light badge bg-light text-dark">Free Wi-Fi</span>
+              <span class="border border-light badge bg-light text-dark">Air conditioning</span>
+              <span class="border border-light badge bg-light text-dark">Fitness center</span>
+              <span class="border border-light badge bg-light text-dark">Bar</span>
+              <span class="border border-light badge bg-light text-dark">Beach access</span>
+            </div>
+            <div class="card__bottom">
+              <div class="options">
+                <span class="date">Island : </span>
+                <span class="category">Maui</span>
+              </div>
+              <div class="card__price">
+                $579
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="card__box col-md-6 col-sm-12"> <!-- /card__box -->
+        <div class="card">
+          <div class="card__img">
+            <img class="card__img-preview" src="img/hotels/sunset-time.jpg" alt="Ho'oilo House">
+          </div>
+          <div class="card__content">
+            <h4 class="card__title"><a href="#">Ho'oilo House Bed and Breakfast</a></h4>
+            <p class="card__text"> 3.5 &#11088; </p>
+            <p class="card__description">Romantic property offering sophisticated suites with outdoor showers, plus ocean views & a pool.</p>
+            <div class="card__tags">
+              <span class="border border-light badge bg-light text-dark">Free breakfast</span>
+              <span class="border border-light badge bg-light text-dark">Air conditioning</span>
+              <span class="border border-light badge bg-light text-dark">Free parking</span>
+              <span class="border border-light badge bg-light text-dark">Outdoor pool</span>
+              <span class="border border-light badge bg-light text-dark">Free Wi-Fi</span>
+            </div>
+            <div class="card__bottom">
+              <div class="options">
+                <span class="date">Island : </span>
+                <span class="category">Maui</span>
+              </div>
+              <div class="card__price">
+                $579
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card__box col-md-6 col-sm-12"> <!-- /card__box -->
+        <div class="card">
+          <div class="card__img">
+            <img class="card__img-preview" src="img/hotels/volcano-inn.jpg" alt="Front side of Volcano Inn">
+          </div>
+          <div class="card__content">
+            <h4 class="card__title"><a href="#">Volcano Inn</a></h4>
+            <p class="card__text"> 4.3 &#11088; </p>
+            <p class="card__description">Cozy quarters & a shaded hot tub set amid a rainforest, plus free WiFi& breakfast.</p>
+            <div class="card__description">
+              <span class="border border-light badge bg-light text-dark">Free Wi-Fi</span>
+              <span class="border border-light badge bg-light text-dark">Air conditioning</span>
+              <span class="border border-light badge bg-light text-dark">Free breakfast</span>
+              <span class="border border-light badge bg-light text-dark">Free parking</span>
+              <span class="border border-light badge bg-light text-dark">Airport shuttle</span>
+              <span class="border border-light badge bg-light text-dark">Kid-friendly</span>
+            </div>
+            <div class="card__bottom">
+              <div class="options">
+                <span class="date">Island : </span>
+                <span class="category">Hawaii (Big Island)</span>
+              </div>
+              <div class="card__price">
+                $189
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card__box col-md-6 col-sm-12"> <!-- /card__box -->
+        <div class="card">
+          <div class="card__img">
+            <img class="card__img-preview" src="img/hotels/mamas-fish.jpg" alt="Mama's fish House Inn">
+          </div>
+          <div class="card__content">
+            <h4 class="card__title"><a href="#">The Inn At Mama's Fish House</a></h4>
+            <p class="card__text"> 4.7 &#11088;</p>
+            <p class="card__description">Tranquil, all-suite beachfront inn offering a Polynesian-inspired fish restaurant.</p>
+            <div class="card__tags">
+              <span class="border border-light badge bg-light text-dark">Free Wi-Fi</span>
+              <span class="border border-light badge bg-light text-dark">Air conditioning</span>
+              <span class="border border-light badge bg-light text-dark">Restaurant</span>
+              <span class="border border-light badge bg-light text-dark">Free parking</span>
+            </div>
+            <div class="card__bottom">
+              <div class="options">
+                <span class="date">Island : </span>
+                <span class="category">Maui</span>
+              </div>
+              <div class="card__price">
+                $193
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card__box col-md-6 col-sm-12"> <!-- /card__box -->
+        <div class="card">
+          <div class="card__img">
+            <img class="card__img-preview" src="img/hotels/keikibeach.jpg" alt="Ke Iki Beach Bungalows">
+          </div>
+          <div class="card__content">
+            <h4 class="card__title"><a href="#">Ke Iki Beach Bungalows</a></h4>
+            <p class="card__text"> 4.6 &#11088;</p>
+            <p class="card__description">Airy bungalows with kitchens & BBQs in a beachfront getaway offering free Wi-Fi & gardens.</p>
+            <div class="card__tags">
+              <span class="border border-light badge bg-light text-dark">Free Wi-Fi</span>
+              <span class="border border-light badge bg-light text-dark">Beach front</span>
+              <span class="border border-light badge bg-light text-dark">Activities</span>
+              <span class="border border-light badge bg-light text-dark">Free parking</span>
+              <span class="border border-light badge bg-light text-dark">Kitchen in rooms</span>
+            </div>
+            <div class="card__bottom">
+              <div class="options">
+                <span class="date">Island : </span>
+                <span class="category">Oahu</span>
+              </div>
+              <div class="card__price">
+                $193
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card__box col-md-6 col-sm-12"> <!-- /card__box -->
+        <div class="card">
+          <div class="card__img">
+            <img class="card__img-preview" src="img/hotels/tikimoonvillas.jpg" alt="Tiki Moon Villas">
+          </div>
+          <div class="card__content">
+            <h4 class="card__title"><a href="#">Tiki Moon Villas</a></h4>
+            <p class="card__text"> 4.5 &#11088;</p>
+            <p class="card__description">Relaxed villas with patios by the beach, plus free parking & boogie board rentals.</p>
+            <div class="card__tags">
+              <span class="border border-light badge bg-light text-dark">Free Wi-Fi</span>
+              <span class="border border-light badge bg-light text-dark">Air conditioning</span>
+              <span class="border border-light badge bg-light text-dark">Beach front</span>
+              <span class="border border-light badge bg-light text-dark">Pet-friendly</span>
+            </div>
+            <div class="card__bottom">
+              <div class="options">
+                <span class="date">Island : </span>
+                <span class="category">Oahu</span>
+              </div>
+              <div class="card__price">
+                $170
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card__box col-md-6 col-sm-12"> <!-- /card__box -->
+        <div class="card">
+          <div class="card__img">
+            <img class="card__img-preview" src="img/hotels/hotel-molokai.jpg" alt="Hotel Moloka'i">
+          </div>
+          <div class="card__content">
+            <h4 class="card__title"><a href="#">Hotel Moloka'i</a></h4>
+            <p class="card__text"> 4.3 &#11088;</p>
+            <p class="card__description">Oceanfront property offering traditional island-themed rooms, as well as an outdoor pool.</p>
+            <div class="card__tags">
+              <span class="border border-light badge bg-light text-dark">Free Wi-Fi</span>
+              <span class="border border-light badge bg-light text-dark">Air conditioning</span>
+              <span class="border border-light badge bg-light text-dark">Beach front</span>
+              <span class="border border-light badge bg-light text-dark">Restaurant</span>
+              <span class="border border-light badge bg-light text-dark">Airport shuttle</span>
+            </div>
+            <div class="card__bottom">
+              <div class="options">
+                <span class="date">Island : </span>
+                <span class="category">Molokai</span>
+              </div>
+              <div class="card__price">
+                $170
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card__box col-md-6 col-sm-12"> <!-- /card__box -->
+        <div class="card">
+          <div class="card__img">
+            <img class="card__img-preview" src="img/hotels/the-mauian-hotel-on-napili.jpg" alt="The Mauian Hotel">
+          </div>
+          <div class="card__content">
+            <h4 class="card__title"><a href="#">The Mauian Hotel</a></h4>
+            <p class="card__text"> 4.5 &#11088;</p>
+            <p class="card__description">Relaxed island-style quarters in a prime beachfront location, plus a pool & free breakfast.</p>
+            <div class="card__tags">
+              <span class="border border-light badge bg-light text-dark">Free Wi-Fi</span>
+              <span class="border border-light badge bg-light text-dark">Beach front</span>
+              <span class="border border-light badge bg-light text-dark">Outdoor pool</span>
+              <span class="border border-light badge bg-light text-dark">Free breakfast</span>
+              <span class="border border-light badge bg-light text-dark">Free parking</span>
+            </div>
+            <div class="card__bottom">
+              <div class="options">
+                <span class="date">Island : </span>
+                <span class="category">Maui</span>
+              </div>
+              <div class="card__price">
+                $170
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    
+  </main>
+
+
+  <footer>
+    <div class="footer">
+      <div class="ft-row">
+        <ul>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Our Services</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+      <div class="ft-row">
+        University of Washington<br>Seattle, WA 98105 &copy; 2022
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

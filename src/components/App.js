@@ -1,17 +1,22 @@
 import React from 'react';
 
-import { HotelsPage } from './HotelsPage.js'
+import { NavBar } from './NavBar.js';
+import { Footer } from './Footer';
+
+import { HotelsPage } from './HotelsPage.js';
 
 function App(props) {
   return (
-    <div>
+    <body>
+      <NavBar />
       {/* <HomePage /> */}
       <HotelsPage />
       {/* <ActivityPage /> */}
       {/* <DinningPage /> */}
       {/* <FormPage /> */}
       {/* <AboutPage /> */}
-    </div>
+      <Footer />
+    </body>
   )
 }
 

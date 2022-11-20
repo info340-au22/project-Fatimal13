@@ -8,17 +8,15 @@ import { Footer } from './Footer';
 export function HotelsPage(props) {
 
   return (
-    <body>
-      <NavBar />
+    <div>
       <header>
         <h1>HOTELS</h1>
       </header>
       <div class="main-header">
         <p class="border border-dark">Filters</p>
       </div>
+    </div>
 
-      <Footer />
-    </body>
 
   )
 }

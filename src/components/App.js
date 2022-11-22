@@ -10,7 +10,7 @@ import { DiningPage } from './DiningPage';
 
 import { About } from './About';
 
-import { HomePage } from '../index';
+import { HomePage } from './HomePage';
 
 
 // importing data

@@ -5,7 +5,6 @@ import { Footer } from './Footer';
 
 import { FormPage } from './FormPage';
 import { HotelsPage } from './HotelsPage.js';
-import { HotelFilter } from "./HotelFilter";
 
 
 // import { data }
@@ -15,12 +14,11 @@ function App(props) {
     <div>
       <NavBar />
       {/* <HomePage /> */}
-      {/* <HotelsPage /> */}
+      <HotelsPage />
       {/* <ActivityPage /> */}
       {/* <DinningPage /> */}
-      {/* <FormPage /> */}
-      {/* <About /> */}
-      <HotelFilter/>
+      {/* <FormPage />  */}
+      {/* <AboutPage /> */}
       <Footer />
     </div>
   )

@@ -1,8 +1,7 @@
 import React from "react";
 import "../index.css";
-import { AiOutlineSearch } from "react-icons/ai";
-import Box from '@mui/material/Box';
-import Slider from '@mui/material/Slider';
+// import { AiOutlineSearch } from "react-icons/ai";
+
 
 export function HotelFilter(props) {
   return (

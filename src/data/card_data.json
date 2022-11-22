@@ -156,7 +156,7 @@
     "title": "Voyagers of the Pacific",
     "rating": 4,
     "description": "Voyagers of the Pacific",
-    "cardImg": "img/hotels/the-mauian-hotel-on-napili.jpg",
+    "cardImg": "img/voyagers-pacific-luau-dance.jpeg",
     "tags": [
       "Oceanfront",
       "Luau",
@@ -167,6 +167,142 @@
     "island": "Hawai'i",
     "price": "$$$",
     "category" : "activity"
+  },
+  {
+    "cardId": 11,
+    "title": "Paradise Cove Lū‘au",
+    "rating": 5,
+    "description": "Paradise Cove Lū‘au",
+    "cardImg": "img/paradisecove.jpeg",
+    "tags": [
+      "Oceanfront",
+      "Luau",
+      "Live Music",
+      "Culture",
+      "Oahu Island"
+    ],
+    "island": "Oahu",
+    "price": "$$$$",
+    "category" : "activity"
+  },
+  {
+    "cardId": 12,
+    "title": "Old Lahaina Lū‘au",
+    "rating": 5,
+    "description": "Old Lahaina Lū‘au",
+    "cardImg": "img/oldlahaina.webp",
+    "tags": [
+      "Beachside",
+      "Luau",
+      "Food",
+      "Culture",
+      "Maui Island"
+    ],
+    "island": "Maui",
+    "price": "$$$",
+    "category" : "activity"
+  },
+  {
+    "cardId": 13,
+    "title": "Grand Hyatt Kaua‘i Lū‘au",
+    "rating": 5,
+    "description": "Grand Hyatt Kaua‘i Lū‘au",
+    "cardImg": "img/Kauai.avif",
+    "tags": [
+      "Waterside",
+      "Luau",
+      "Food",
+      "Culture",
+      "Kaua'i Island"
+    ],
+    "island": "Kaua'i",
+    "price": "$$$$",
+    "category" : "activity"
+  },
+  {
+    "cardId": 14,
+    "title": "Kalaupapa Mule Tour",
+    "rating": 5,
+    "description": "Kalaupapa Mule Tour",
+    "cardImg": "img/molokai-mule-ride-to.jpeg",
+    "tags": [
+      "Nature",
+      "Tour",
+      "Historical",
+      "Culture",
+      "Lāna‘i and Moloka‘i Island"
+    ],
+    "island": "Lāna‘i and Moloka‘i",
+    "price": "$$",
+    "category" : "activity"
+  },
+  {
+    "cardId": 15,
+    "title": "Jackie Rey's Ohana Grill",
+    "rating": 4,
+    "description": "Jackie Rey's Ohana Grill",
+    "cardImg": "img/jackie-rays-kona-interior-2.jpeg",
+    "tags": [
+      "Seafood",
+      "View Access",
+      "Grill",
+      "Bar",
+      "Hawai'i Island"
+    ],
+    "island": "Hawai'i",
+    "price": "$$",
+    "category" : "dining"
+  },
+  {
+    "cardId": 16,
+    "title": "Merriman’s Honolulu",
+    "rating": 4,
+    "description": "Merriman’s Honolulu",
+    "cardImg": "img/merrimans.jpeg",
+    "tags": [
+      "Seafood",
+      "View Access",
+      "Live Music",
+      "Dine In",
+      "Oahu Island"
+    ],
+    "island": "Oahu",
+    "price": "$$",
+    "category" : "dining"
+  },
+  {
+    "cardId": 17,
+    "title": "Roy’s Waikoloa Bar & Grill",
+    "rating": 4,
+    "description": "Roy’s Waikoloa Bar & Grill",
+    "cardImg": "img/roysbarandgrill.png",
+    "tags": [
+      "Seafood",
+      "View Access",
+      "Bar",
+      "Grill",
+      "Hawaiʻi Island"
+    ],
+    "island": "Hawaiʻi",
+    "price": "$$$",
+    "category" : "dining"
+  },
+  {
+    "cardId": 17,
+    "title": "Lahaina Grill",
+    "rating": 5,
+    "description": "Lahaina Grill",
+    "cardImg": "img/lahaina.jpeg",
+    "tags": [
+      "Seafood",
+      "Art",
+      "Winery",
+      "Elegant",
+      "Maui Island"
+    ],
+    "island": "Maui",
+    "price": "$$$$",
+    "category" : "dining"
   }
 ]
 

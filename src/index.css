@@ -564,3 +564,51 @@ hr.dotted {
   text-align: center;
   font-weight: bold;
 }
+
+/* HoteFilter */
+.App {
+  height: 100%;
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.label {
+  font-weight: bold;
+padding-top: 30px;
+font-size: 14px;
+
+}
+.sublabel{
+  font-size: 12px;
+  font-weight: bold;
+}
+.wrapper {
+  position:relative;
+  margin-top: 20px;
+}
+
+.icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  padding: 4px;
+  position: absolute;
+  box-sizing:border-box;
+  top:50%;
+  left:2px;
+  transform: translateY(-50%);
+}
+
+.input {
+  height: 40px;
+  border-radius: 10px;
+  box-sizing:border-box;
+  padding-left: 1.5rem;
+}
+.break {
+  width: 14%;
+  margin: 0px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* float: left; */
+}

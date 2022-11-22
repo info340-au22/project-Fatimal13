@@ -5,18 +5,22 @@ import { Footer } from './Footer';
 
 import { FormPage } from './FormPage';
 import { HotelsPage } from './HotelsPage.js';
+import { ActivitiesPage } from './ActivitiesPage.js';
+import { DiningPage } from './DiningPage';
 
 
-// import { data }
+// importing data
+import CARD_DATA from '../data/card_data.json';
+
 
 function App(props) {
   return (
     <div>
       <NavBar />
       {/* <HomePage /> */}
-      <HotelsPage />
-      {/* <ActivityPage /> */}
-      {/* <DinningPage /> */}
+      {/* <HotelsPage cardData={CARD_DATA}/> */}
+      <ActivitiesPage cardData={CARD_DATA}/>
+      {/* <DiningPage cardData={CARD_DATA}/> */}
       {/* <FormPage />  */}
       {/* <AboutPage /> */}
       <Footer />

@@ -579,3 +579,8 @@ hr.dotted {
     text-align: center;
     font-weight: bold;
 }
+
+
+.filters label {
+    display: block;
+}

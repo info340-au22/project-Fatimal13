@@ -3,11 +3,12 @@ import React from 'react';
 import { CardItems } from './CardItems.js'
 import { Filter } from './Filter.js';
 
-export function HotelsPage(props) {
+
+export function DiningPage(props) {
   const rawCardData = props.cardData;
 
   const filteredCardData = rawCardData.filter((cardObj) => {
-    return cardObj.category === "hotel";
+    return cardObj.category === "dining";
   })
 
   const cardArray = filteredCardData.map((cardObj) => {
@@ -22,7 +23,7 @@ export function HotelsPage(props) {
   return (
     <div>
       <header>
-        <h1>HOTELS</h1>
+        <h1>DINING</h1>
       </header>
       <div className="container">
         <div className="row">

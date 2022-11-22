@@ -14,7 +14,7 @@ function App(props) {
     <div>
       <NavBar />
       {/* <HomePage /> */}
-      <HotelsPage />
+      {/* <HotelsPage /> */}
       {/* <ActivityPage /> */}
       {/* <DinningPage /> */}
       <FormPage /> 

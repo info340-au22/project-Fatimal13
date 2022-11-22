@@ -1,10 +1,6 @@
 import React from 'react';
 
-import { NavBar } from './NavBar.js';
-import { Footer } from './Footer';
-
-class About extends Component {
-    render() {
+export function About(props) {
       return(
         <div>
         <header>
@@ -51,7 +47,5 @@ class About extends Component {
         </section>
         </div>
       );
-    }
-  }
+    };
   
-  export {About};

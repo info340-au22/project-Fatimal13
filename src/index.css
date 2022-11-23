@@ -14,7 +14,7 @@ body {
   letter-spacing: 0.05em;
 }
 
-header:not(.index) {
+header:not(.index, .about) {
   margin-top: 6rem;
   padding: 2rem;
 }

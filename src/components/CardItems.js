@@ -12,7 +12,7 @@ export function CardItems(props) {
   })
 
   return (
-    <div className="card__box col-md-6 col-sm-12">
+    <div className="card__box col-sm-12">
       <div className="card">
         <div className="card__img">
           <img className="card__img-preview" src={cardImg} alt={title} />

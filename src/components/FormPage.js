@@ -19,10 +19,16 @@ export function FormPage(props) {
 
     )
     return (
-        <form>
-            <div>
-                {formArray}
-            </div>
-        </form>
+        <div>
+            <header>
+                <h1>FORM</h1>
+            </header>
+            
+            <form>
+                <div>
+                    {formArray}
+                </div>
+            </form>
+        </div>
     )
 }

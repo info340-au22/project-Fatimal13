@@ -21,12 +21,12 @@ function App(props) {
   return (
     <div>
       <NavBar />
-      <HomePage />
-      {/* <HotelsPage cardData={CARD_DATA}/> */}
-      <ActivitiesPage cardData={CARD_DATA}/>
+      {/* <HomePage /> */}
+      <HotelsPage cardData={CARD_DATA}/>
+      {/* <ActivitiesPage cardData={CARD_DATA}/> */}
       {/* <DiningPage cardData={CARD_DATA}/> */}
       {/* <FormPage />  */}
-      <About />
+      {/* <About /> */}
       <Footer />
     </div>
   )

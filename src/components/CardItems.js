@@ -2,6 +2,7 @@ import React from 'react';
 
 
 export function CardItems(props) {
+  console.log(props, "cardItems")
   const { title, rating, description, cardImg, tags, island, price } = props.cardData;
 
   const tagsArray = tags.map((item) => {

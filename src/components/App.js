@@ -22,13 +22,13 @@ function App(props) {
   return (
     <div>
       <NavBar />
-      {/*<QuizPage /> 
-      {/* <HomePage /> */} */}
-      <HotelsPage cardData={CARD_DATA}/>
-      {/*{/* <ActivitiesPage cardData={CARD_DATA}/>*/} */}
+      {/* <QuizPage />  */}
+      <HomePage />
+      {/* <HotelsPage cardData={CARD_DATA}/> */}
+      {/*{/* <ActivitiesPage cardData={CARD_DATA}/>*/}
       {/*<DiningPage cardData={CARD_DATA}/>*/}
       {/*<FormPage />*/}
-      {/*{/* <About />*/} */}
+      {/*{/* <About />*/}
       <Footer />
     </div>
   )

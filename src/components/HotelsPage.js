@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { CardItems } from './CardItems.js'
-import { Filter } from './Filter.js';
+import Filter from './Filter2.js';
 
 export function HotelsPage(props) {
   const rawCardData = props.cardData;

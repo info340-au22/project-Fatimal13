@@ -2,7 +2,7 @@ import React from 'react';
 
 export function Filter(props) {
   return (
-    <div className="col-md-3">
+    <div>
       <p>Filter</p>
       <div className="filters">
         <p>Sort By </p>

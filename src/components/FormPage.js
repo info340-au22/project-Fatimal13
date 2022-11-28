@@ -1,7 +1,7 @@
 import React from 'react';
 import { useMemo, useState } from "react";  
 // npm install react-select
-import Select from 'react-select';
+// import Select from 'react-select';
 
 function PersonalInfo(props){
 
@@ -139,7 +139,7 @@ function BusinessInfo(props){
                 <div className="container">
                     <div className='col-md-3'></div>
                     <div className='col-md-6'>
-                        <Select options={bizTypes}/>
+                        {/* <Select options={bizTypes}/> */}
                     </div>
                 </div>
             </label>
@@ -158,7 +158,7 @@ function BusinessInfo(props){
                 <div className="container">
                     <div className='col-md-3'></div>
                     <div className='col-md-6'>
-                        <Select options={bizLoc}/>
+                        {/* <Select options={bizLoc}/> */}
                     </div>
                 </div>
             </label>

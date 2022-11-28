@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { CardItems } from './CardItems.js'
-import { Filter } from './Filter.js';
+// import { Filter } from './Filter.js';
 
 
 export function ActivitiesPage(props) {
@@ -28,7 +28,7 @@ export function ActivitiesPage(props) {
       <div className="container">
         <div className="row">
           <div className="col-md-4 border">
-            <Filter />
+            {/* <Filter /> */}
           </div>
           <div className="col-md-8">
             <section className="card__list row">

@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export function NavBar(props) {
   return (
     <nav>
     <div className="logo">
-      <img src="img/logo.jpg" alt="Logo Image" />
+      <img src="img/logo.jpg" alt="Logo" />
     </div>
     <div className="hamburger">
       <div className="line1"></div>
@@ -12,13 +13,23 @@ export function NavBar(props) {
       <div className="line3"></div>
     </div>
     <ul className="nav-links">
-      <li><a href="index.html">HOME</a></li>
-      <li><a href="dinning.html">DINING</a></li>
-      <li><a href="hotels.html">HOTELS</a></li>
-      <li><a href="activities.html">ACTIVITIES</a></li>
-      <li><a href="about.html">ABOUT</a></li>
-      <li><button className="login-button" href="#">Login</button></li>
-      <li><button className="join-button" href="forms.html">Join</button></li>
+      <li><Link to="/">HOME</Link></li>
+      {/* <li><a href="index.html">HOME</a></li> */}
+      <li><Link to="/dinings">DINING</Link></li>
+      <li><Link to="/hotels">HOTELS</Link></li>
+      <li><Link to="/activities">ACTIVITIES</Link></li>
+      <li><Link to="/about">ABOUT</Link></li>
+
+      <li>
+        <Link to="">
+          <button className="login-button">Login</button>
+        </Link>
+      </li>
+      <li>
+        <Link to="/form">
+          <button className="login-button">Join</button>
+        </Link>
+      </li>
     </ul>
   </nav>
   )

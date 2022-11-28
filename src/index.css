@@ -612,3 +612,17 @@ font-size: 14px;
   margin-bottom: 20px;
   /* float: left; */
 }
+
+/* <SortButton /> styling */
+
+.btn-sort {
+  color: #bbb;
+}
+
+.btn-sort .flip {
+  transform: scale(1, -1);
+}
+
+.btn-sort .active {
+  color: #0d6efd
+}

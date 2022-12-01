@@ -9,7 +9,7 @@ import { ActivitiesPage } from './ActivitiesPage.js';
 import { DiningPage } from './DiningPage';
 import { About } from './About';
 import { FormPage } from './FormPage';
-import { QuizPage } from './QuizPage';
+import { Quiz } from './Quiz';
 import { Routes, Route } from 'react-router-dom';
 
 // importing data
@@ -25,7 +25,7 @@ function App(props) {
         <Route path="hotels" element={ <HotelsPage cardData={CARD_DATA}/> } />
         <Route path="activities" element={ <ActivitiesPage cardData={CARD_DATA}/> } />
         <Route path="dinings" element={ <DiningPage cardData={CARD_DATA}/> } />
-        <Route path="quiz" element={ <QuizPage /> } />
+        <Route path="quiz" element={ <Quiz /> } />
         <Route path="form" element={ <FormPage /> } />
       </Routes>
       <Footer />

@@ -626,3 +626,67 @@ font-size: 14px;
 .btn-sort .active {
   color: #0d6efd
 }
+
+/* Quiz */
+
+.Quiz {
+  text-align: center;
+}
+
+.quiz-card {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 80%;
+  height: auto;
+  background-color:  darkblue;
+  padding: 16px;
+  border-radius: 16px;
+  color: white;
+}
+
+.quiz-ul {
+  list-style: none;
+}
+
+.quiz-li {
+  margin-top: 8px;
+  background-color: #ABC9FF;
+  padding: 16px;
+  border: 3px solid white;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+.quiz-li:hover {
+  box-shadow: 0 10px 15px #6699f7;
+}
+
+.question-text {
+  color: white;
+  font-size: 24px;
+}
+
+.final-results {
+  margin: 0 auto;
+  width: 50%;
+  height: auto;
+  margin-top: 64px;
+  background-color:  #ABC9FF;
+  padding: 16px;
+  border-radius: 16px;
+  color: white;
+}
+
+.quiz-button {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 24px;
+}

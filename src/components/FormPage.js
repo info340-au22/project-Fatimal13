@@ -1,10 +1,15 @@
 import React from 'react';
 import { useMemo, useState } from "react";  
 // npm install react-select
-// import Select from 'react-select';
+import Select from 'react-select';
 
-function PersonalInfo(props){
+    // Feedback: build everything to one component
+    // all variables should have lower cap 
+    // upload images (wait till last of class)
 
+function FormComponents(props) {
+
+    // Peronsal Info
     const [typedFNameInput, setTypedFNameInput] = useState("");
     const [typedLNameInput, setTypedLNameInput] = useState("");
     const [typedEmailInput, setTypedEmailInput] = useState("business@email.com");
@@ -31,77 +36,12 @@ function PersonalInfo(props){
         setTypedPhoneInput(value);
     }
 
-    let PersonalInfoArray = [];
 
-    const Fname = (
-        <div className='formquestion mb-3'>
-            <label>First name:
-                <input 
-                type='text'
-                id='firstName'
-                value={typedFNameInput}
-                onChange={handleFNameChange}
-                required
-                />
-            </label>
-        </div>
-    )
-
-    const Lname = (
-        <div className='formquestion mb-3'>
-            <label>Last name:
-                <input 
-                type='text'
-                id='lastName'
-                value={typedLNameInput}
-                onChange={handleLNameChange}
-                required
-                />
-            </label>
-        </div>
-    )
-
-    const email = (
-        <div className='formquestion mb-3'>
-            <label>Email:  
-                <input 
-                type='email'
-                id='email'
-                value={typedEmailInput}
-                onChange={handleEmailChange}
-                required
-                />
-            </label>
-        </div>
-    )
-
-    const phone = (
-        <div className='formquestion mb-3 align-baseline'>
-            <label>Phone number:  
-                    <input 
-                    type="tel" 
-                    id="number"
-                    value={typedPhoneInput}
-                    onChange={handlePhoneChange}
-                    required
-                    />
-            </label>
-        </div>
-    )
-    
-    PersonalInfoArray.push(Fname);
-    PersonalInfoArray.push(Lname);
-    PersonalInfoArray.push(email);
-    PersonalInfoArray.push(phone);
-
-    return PersonalInfoArray;
-}
-
-function BusinessInfo(props){
-
+    // Business Info
     const [typedBizNameInput, setTypedBizNameInput] = useState("");
-    const [typedBizDescInput, setTypedBizDescInput] = useState("");
-
+    const [typedBizDescInput, setTypedBizDescInput] = useState("Tell us about your business");
+    const [typedBizTypeInput, setTtypedBizTypeInput] = useState("");
+    const [typedBizLocInput, setTypedBizLocInput] = useState("");
 
     const handleBizNameChange = (event) => {
         const value = event.target.value; //what user typed in
@@ -113,82 +53,107 @@ function BusinessInfo(props){
         setTypedBizDescInput(value);
     }
 
-    const businessArray = [];
+    const handleBizTypeClick = (event) => {
+        const value = event.target.value;
+        setTtypedBizTypeInput(value);
+    }
 
-    const bizName = (
-        <div className='formquestion mb-3 align-baseline'>
-            <label>Business name:  
-                <input 
-                type="text"
-                id='title'
-                value={typedBizNameInput}
-                onChange={handleBizNameChange}
-                required
-                />
-            </label>
+    const handleBizLocClick = (event) => {
+        const value = event.target.value;
+        setTypedBizLocInput(value);
+    }
+
+    return (
+        <div>
+            <div className='formquestion mb-3'>
+                <label>First name:  
+                    <input 
+                    type='text'
+                    value={typedFNameInput}
+                    onChange={handleFNameChange}
+                    required
+                    />
+                </label>
+            </div>
+            <div className='formquestion'>
+                <label>Last name:  
+                    <input 
+                    type='text'
+                    value={typedLNameInput}
+                    onChange={handleLNameChange}
+                    required
+                    />
+                </label>
+            </div>
+            <div className='formquestion'>
+                <label>Email:   
+                    <input 
+                    type='email'
+                    value={typedEmailInput}
+                    onChange={handleEmailChange}
+                    required
+                    />
+                </label>
+            </div>
+            <div className='formquestion'>
+                <label>Phone number:  
+                        <input 
+                        type="tel" 
+                        value={typedPhoneInput}
+                        onChange={handlePhoneChange}
+                        required
+                        />
+                </label>
+            </div>
+            <div className='formquestion'>
+                <label>Business name:  
+                    <input 
+                    type="text"
+                    value={typedBizNameInput}
+                    onChange={handleBizNameChange}
+                    required
+                    />
+                </label>
+            </div>
+            <div className='formquestion col-auto'>
+                <label> Business Type:   </label>
+                    <select className="form-select" value={typedBizTypeInput} onChange={handleBizTypeClick} >
+                        <option value="hotel">Hotel</option>
+                        <option value="dining">Dining</option>
+                        <option value="activity">Activity</option>
+                </select>
+            </div>
+            <div className='formquestion col-auto'>
+                <label> Business Location:   </label>
+                    <select id='businessLoc' className="form-select" value={typedBizLocInput} onChange={handleBizLocClick} >
+                        <option value="Maui">Maui</option>
+                        <option value="Hawaiʻi">Hawaiʻi</option>
+                        <option value="Oahu">Oahu</option>
+                        <option value="Lāna‘i & Molokai">Lāna‘i & Molokai</option>
+                        <option value="Kaua'i">Kaua'i</option>
+                    </select>
+            </div>
+
+            <div className='formquestion'>
+                <label>Business description:  
+                    <textarea className="form-control" 
+                    value={typedBizDescInput}
+                    onChange={handleBizDescChange}
+                    required>
+                    </textarea>
+                </label>
+            </div>
+            <button className="formquestion btn btn-primary" 
+                    type="button">Submit form
+                    {/* onClick={handleSubmit} */}
+            </button>
         </div>
+
     )
-    
-    const bizTypes = [{ label: "hotel" },
-    { label: "dining" },
-    { label: "activity" }];
-
-    const bizType = (
-        <div className='formquestion mb-3'>
-            <label>Business Type:  
-                <div className="container">
-                    <div className='col-md-3'></div>
-                    <div className='col-md-6'>
-                        {/* <Select options={bizTypes}/> */}
-                    </div>
-                </div>
-            </label>
-        </div>
-    )
-    
-    const bizLoc = [{ label: "Maui" },
-    { label: "Hawaiʻi" },
-    { label: "Oahu" },
-    { label: "Kaua'i" },
-    { label: "Lāna‘i & Molokai" }];
-
-    const bizLocs = (
-        <div className='formquestion mb-3'>
-            <label>Location:  
-                <div className="container">
-                    <div className='col-md-3'></div>
-                    <div className='col-md-6'>
-                        {/* <Select options={bizLoc}/> */}
-                    </div>
-                </div>
-            </label>
-        </div>
-    )
-
-    const bizDesc = (
-        <div className='formquestion mb-3'>
-            <label>Business description:  
-                <textarea className="form-control" id="description" 
-                placeholder="Tell us about your business" 
-                value={typedBizDescInput}
-                onChange={handleBizDescChange}
-                required>
-                </textarea>
-            </label>
-        </div>
-    )
-    
-    businessArray.push(bizName);
-    businessArray.push(bizType);
-    businessArray.push(bizLocs);
-    businessArray.push(bizDesc);
-
-
-    return businessArray;
 }
 
+
 export function FormPage(props) {
-    const [typedAllValues, setAllTypedValues] = useState("");
 
     // const handleSubmit = (event) => {
     //     props.addBusinessCallback(typedInput);
@@ -201,16 +166,9 @@ export function FormPage(props) {
             </header>
             <form>
                 <div className="input-group">
-                    <PersonalInfo/>
-                    <BusinessInfo />
-                    <button 
-                    className="btn btn-primary" 
-                    type="button">Submit form
-                    {/* onClick={handleSubmit} */}
-                    </button>
+                    <FormComponents/>
                 </div>
             </form>
         </div>
     )
 }
-

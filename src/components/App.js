@@ -14,6 +14,7 @@ import { Routes, Route } from 'react-router-dom';
 
 // importing data
 import CARD_DATA from '../data/card_data.json';
+import QUIZ_DATA from '../data/quiz_data.json';
 
 function App(props) {
   return (
@@ -22,11 +23,11 @@ function App(props) {
       <Routes>
         <Route index element={ <HomePage /> } />
         <Route path="about" element={ <About /> } >
-          <Route path="quiz" element={ <Quiz /> } />
         </Route >
         <Route path="hotels" element={ <HotelsPage cardData={CARD_DATA}/> } />
         <Route path="activities" element={ <ActivitiesPage cardData={CARD_DATA}/> } />
         <Route path="dinings" element={ <DiningPage cardData={CARD_DATA}/> } />
+        <Route path="quiz" element={ <Quiz quizData={QUIZ_DATA}/> } />
         <Route path="form" element={ <FormPage /> } />
       </Routes>
       <Footer />

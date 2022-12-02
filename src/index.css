@@ -316,9 +316,10 @@ hr.dotted {
   top: 60%;
   left: 20%;
   position: absolute;
+  list-style: none;
 }
 
-.start-qz a {
+.start-qz li a{
   text-decoration: none;
   font-weight: bold;
   font-size: 2.5rem;
@@ -422,6 +423,7 @@ hr.dotted {
   padding: 2px 6px 2px 6px;
   border-radius: 25px;
   box-shadow: 0 5px 10px #6699f7;
+  list-style: none;
 }
 
 .register-button:hover {
@@ -546,6 +548,7 @@ hr.dotted {
   top: 10px;
   position: relative;
   bottom: 10px;
+  margin-bottom: 15px;
 }
 
 #about-image img {

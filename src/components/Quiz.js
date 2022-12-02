@@ -9,7 +9,7 @@ export function Quiz(props) {
     const [score, setScore] = useState(0);
 
     const optionClicked = (isCorrect) => {
-        if (questions.isCorrect) {
+        if (isCorrect) {
             setScore(score + 1);
         }
         if (currentQuestion + 1 < questions.length) {

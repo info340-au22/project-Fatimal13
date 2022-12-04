@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 export function About(props) {
   return (
     <div>
-      <header>
+      <header className="about">
         <div id="about-image">
           <img src="img/header-photo.png" alt="a picture of hawaiian islands" />
           <h1 id="about-txt">ABOUT US</h1>

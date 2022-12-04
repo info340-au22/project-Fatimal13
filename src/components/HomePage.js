@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 export function HomePage(props) {
     return (
@@ -39,7 +41,7 @@ export function HomePage(props) {
               <img src="https://www.kindpng.com/picc/m/276-2765159_dronegenuity-hawaiian-islands-hd-png-download.png"
                 alt="Dronegenuity - Hawaiian Islands, HD Png Download@kindpng.com" />
               <div class="start-qz">
-                <a href="#">START QUIZ!</a>
+                <li><Link to="/quiz">START QUIZ!</Link></li>
               </div>
             </div>
   
@@ -87,7 +89,7 @@ export function HomePage(props) {
               so
               we can promote it!</p>
             <div className="button-container">
-              <a href="forms.html" className="register-button">REGISTER NOW</a>
+              <li className="register-button"><Link to="/form">REGISTER NOW</Link></li>
             </div>
           </div>
         </main>

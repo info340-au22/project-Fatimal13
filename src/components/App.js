@@ -22,8 +22,7 @@ function App(props) {
       <NavBar />
       <Routes>
         <Route index element={ <HomePage /> } />
-        <Route path="about" element={ <About /> } >
-        </Route >
+        <Route path="about" element={ <About /> } />
         <Route path="hotels" element={ <HotelsPage cardData={CARD_DATA}/> } />
         <Route path="activities" element={ <ActivitiesPage cardData={CARD_DATA}/> } />
         <Route path="dinings" element={ <DiningPage cardData={CARD_DATA}/> } />

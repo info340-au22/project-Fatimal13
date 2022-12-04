@@ -19,14 +19,6 @@ export function Filter(props) {
           applyFilterCallback={props.applyFilterCallback}
         />
 
-        {/* 
-        <label><input type="checkbox" value=".b, .c1" /> price</label>
-        <label><input type="checkbox" value=".b, .c2" /> star </label>
-        <label><input type="checkbox" value=".b, .c2" /> title </label>
-        <p>Filter</p>
-        <label><input type="checkbox" value=".b, .c3" /> island </label>
-        <label><input type="checkbox" value=".b, .c4" /> tags </label> */}
-
       </div>
     </div>
   )
@@ -95,7 +87,6 @@ function SortButton(props) {
   let iconClasses = ""
   if (props.active) { iconClasses += ` active` }
   if (props.ascending) { iconClasses += ` flip` };
-
   return (
     <button className="btn btn-sm btn-sort" name={props.name} onClick={props.onClick}>
       <span className={"material-icons" + iconClasses} aria-label={`sort by ${props.name}`}>sort</span>
@@ -124,7 +115,7 @@ function TagsFilterNav(props) {
     const active = identifiers.filter(function(id) {
       return checkedItems[id]
     })
-    // console.log(active);
+    console.log(active);
     props.applyFilterCallback(active);
   }
 

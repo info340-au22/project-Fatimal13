@@ -6,25 +6,20 @@ import { CardItems } from './CardItems.js'
 import { Filter } from './Filter.js';
 
 export function HotelsPage(props) {
-  // [DATA] prop: cardData from App
-  const rawCardData = props.cardData;
   // [DATA] getting only cards belong that page
-  const filteredCardData = rawCardData.filter((cardObj) => {
+  const pageCardData = props.cardData.filter((cardObj) => {
     return cardObj.category === "hotel";
   })
 
-  // card data state
-  const [cardDataArray, setCardDataArray] = useState(filteredCardData);
-  
-
   //states
-  const [selectedValue, setSelectedValue] = useState("");
-  const [isChecked, setIsChecked] = useState(false);
+  const [selectedValues, setSelectedValue] = useState([]);
+  const [sortByCriteria, setSortByCriteria] = useState(null);
+  const [isAscending, setIsAscending] = useState(null);
 
 
   // getting unique values for the filter
   let allTagsArray = [];
-  cardDataArray.forEach(getUniqueTags);
+  pageCardData.forEach(getUniqueTags);
   function getUniqueTags(item) {
     const tags = item.tags;
     allTagsArray.push(...tags);
@@ -32,30 +27,29 @@ export function HotelsPage(props) {
   const uniqueTags = [...new Set(allTagsArray)];
 
 
-
-
+  // SortBy
+  const sortedData = _.sortBy(pageCardData, [sortByCriteria]);
+  if (sortByCriteria != null && isAscending === false) {
+  _.reverse(sortedData);
+  }
+  
+    // // Filter the data
+    // displayedData = sortedData.filter((element) => {
+    //   return selectedValues.includes(element.tags);
+    //   console.log('hotel', selectedValues);
+    //   console.log(element.tags);
+    //   // console.log(displayedData)
+    // })
+  
   //function
   function sortByCallback(sortByCriteria, isAscending) {
-    // console.log('hotel: sortByCallback', sortByCriteria, isAscending)
-    let sortedArray = _.sortBy(cardDataArray, [sortByCriteria]);
-    // console.log('sortedArray', sortedArray);
-    if (sortByCriteria != null && isAscending === false) {
-      _.reverse(sortedArray);
-    } 
-    setCardDataArray(sortedArray);
+    setSortByCriteria(sortByCriteria);
+    setIsAscending(isAscending);
   }
-
-
 
   // function : applyFilterCallback
   function applyFilterCallback(checkedValuesArray) {
-    const displayedData = cardDataArray.filter((element) => {
-      return checkedValuesArray.includes(element.tags);
-      console.log('hotel', checkedValuesArray);
-      console.log(element.tags);
-      // console.log(displayedData)
-    })
-    setCardDataArray(displayedData);
+    setSelectedValue(checkedValuesArray);
   }
 
 
@@ -63,7 +57,7 @@ export function HotelsPage(props) {
 
 
   // creating card items
-  const cardArray = cardDataArray.map((cardObj) => {
+  const cardArray = sortedData.map((cardObj) => {
     const element = (
       <CardItems
         cardData={cardObj}
@@ -81,7 +75,7 @@ export function HotelsPage(props) {
         <div className="row">
           <div className="col-md-4 border">
             <Filter 
-            cardData={cardDataArray}
+            cardData={sortedData}
             sortByCallback={sortByCallback}
             tags={uniqueTags}
             applyFilterCallback={applyFilterCallback}

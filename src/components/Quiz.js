@@ -33,7 +33,7 @@ export function Quiz(props) {
                     <h1>Quiz Results!</h1>
                     <h2>
                         {score} out of {questions.length} correct - (
-                        {(score / questions.length) * 100}%)
+                        {Math.round((score / questions.length) * 100)}%)
                     </h2>
                     <h3>
                         Thank you for taking our quiz! Hopefully you were able to gain some valuable insights about native

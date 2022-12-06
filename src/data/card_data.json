@@ -46,7 +46,7 @@
       "Airport shuttle",
       "Kid-friendly"
     ],
-    "island": "Hawaii (Big Island)",
+    "island": "Hawai'i",
     "price": "$$$",
     "category" : "hotel"
   },
@@ -63,7 +63,7 @@
       "Bar",
       "Beach access"
     ],
-    "island": "Hawaii",
+    "island": "Hawai'i",
     "price": "$$$",
     "category" : "hotel"
   },
@@ -130,7 +130,7 @@
       "Restaurant",
       "Airport shuttle"
     ],
-    "island": "Molokai",
+    "island": "Moloka‘i",
     "price": "$$",
     "category" : "hotel"
   },
@@ -161,8 +161,7 @@
       "Oceanfront",
       "Luau",
       "Food",
-      "Culture",
-      "Hawai'i Island"
+      "Culture"
     ],
     "island": "Hawai'i",
     "price": "$$$",
@@ -178,8 +177,7 @@
       "Oceanfront",
       "Luau",
       "Live Music",
-      "Culture",
-      "Oahu Island"
+      "Culture"
     ],
     "island": "Oahu",
     "price": "$$$$",
@@ -195,8 +193,7 @@
       "Beachside",
       "Luau",
       "Food",
-      "Culture",
-      "Maui Island"
+      "Culture"
     ],
     "island": "Maui",
     "price": "$$$",
@@ -212,8 +209,7 @@
       "Waterside",
       "Luau",
       "Food",
-      "Culture",
-      "Kaua'i Island"
+      "Culture"
     ],
     "island": "Kaua'i",
     "price": "$$$$",
@@ -229,10 +225,9 @@
       "Nature",
       "Tour",
       "Historical",
-      "Culture",
-      "Lāna‘i and Moloka‘i Island"
+      "Culture"
     ],
-    "island": "Lāna‘i and Moloka‘i",
+    "island": "Lāna‘i",
     "price": "$$",
     "category" : "activity"
   },
@@ -246,8 +241,7 @@
       "Seafood",
       "View Access",
       "Grill",
-      "Bar",
-      "Hawai'i Island"
+      "Bar"
     ],
     "island": "Hawai'i",
     "price": "$$",
@@ -263,8 +257,7 @@
       "Seafood",
       "View Access",
       "Live Music",
-      "Dine In",
-      "Oahu Island"
+      "Dine In"
     ],
     "island": "Oahu",
     "price": "$$",
@@ -280,15 +273,14 @@
       "Seafood",
       "View Access",
       "Bar",
-      "Grill",
-      "Hawaiʻi Island"
+      "Grill"
     ],
     "island": "Hawaiʻi",
     "price": "$$$",
     "category" : "dining"
   },
   {
-    "cardId": 17,
+    "cardId": 18,
     "title": "Lahaina Grill",
     "rating": 5,
     "description": "Lahaina Grill",
@@ -297,12 +289,27 @@
       "Seafood",
       "Art",
       "Winery",
-      "Elegant",
-      "Maui Island"
+      "Elegant"
     ],
     "island": "Maui",
     "price": "$$$$",
     "category" : "dining"
+  },
+  {
+    "cardId": 19,
+    "title": "Kalaupapa Mule Tour",
+    "rating": 5,
+    "description": "Kalaupapa Mule Tour",
+    "cardImg": "img/molokai-mule-ride-to.jpeg",
+    "tags": [
+      "Nature",
+      "Tour",
+      "Historical",
+      "Culture"
+    ],
+    "island": "Moloka‘i",
+    "price": "$$",
+    "category" : "activity"
   }
 ]
 

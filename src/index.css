@@ -215,7 +215,7 @@ nav {
   }
 }
 
-
+/* NEED TO CHECK */
 .mt-50 {
   margin-top: 50px;
 }
@@ -230,13 +230,14 @@ nav {
 }
 
 a {
-  text-decoration: none !important;
+  text-decoration: none !important; /* NEED TO CHECK */
 }
-
 
 .fa {
   color: red;
 }
+/* NEED TO CHECK */
+
 
 /* MAINPAGE */
 
@@ -432,10 +433,6 @@ hr.dotted {
 
 
 
-
-
-
-
 /* HOTEL PAGE / ACTIVITIES / DINING */
 
 .card__list {
@@ -536,11 +533,47 @@ hr.dotted {
   color: #888;
 }
 
-.card__price {
+.card__price, .moneySign{
   color: #E35354;
   text-align: center;
   font-weight: 700;
   font-size: 1rem;
+}
+
+/* FILTER */
+.filter_title {
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+}
+.order_by {
+  margin-bottom: 2rem;
+}
+
+.order_by > p, .filter_by > p {
+  border-bottom: 1px solid #888;
+  padding-bottom: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.order_by > .list {
+  margin-top: 1px;
+}
+
+.order_by > p {
+  border-bottom: 1px solid #888;
+  padding-bottom: 1rem;
+}
+
+.filter_by .tags {
+  padding-left: 1rem;
+}
+
+.filter_buttons {
+  margin-bottom: 2rem;
 }
 
 /* About */
@@ -566,54 +599,6 @@ hr.dotted {
   transform: translate(-50%, -50%);
   text-align: center;
   font-weight: bold;
-}
-
-/* HoteFilter */
-.App {
-  height: 100%;
-  padding-left: 50px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.label {
-  font-weight: bold;
-padding-top: 30px;
-font-size: 14px;
-
-}
-.sublabel{
-  font-size: 12px;
-  font-weight: bold;
-}
-.wrapper {
-  position:relative;
-  margin-top: 20px;
-}
-
-.icon {
-  height: 1.5rem;
-  width: 1.5rem;
-  padding: 4px;
-  position: absolute;
-  box-sizing:border-box;
-  top:50%;
-  left:2px;
-  transform: translateY(-50%);
-}
-
-.input {
-  height: 40px;
-  border-radius: 10px;
-  box-sizing:border-box;
-  padding-left: 1.5rem;
-}
-.break {
-  width: 14%;
-  margin: 0px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  /* float: left; */
 }
 
 /* <SortButton /> styling */
@@ -693,3 +678,5 @@ font-size: 14px;
   font-weight: bold;
   border-radius: 24px;
 }
+
+

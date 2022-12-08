@@ -623,7 +623,7 @@ hr.dotted {
 
 .quiz-card {
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 120px;
   margin-bottom: 20px;
   width: 80%;
   height: auto;
@@ -659,7 +659,8 @@ hr.dotted {
   margin: 0 auto;
   width: 50%;
   height: auto;
-  margin-top: 64px;
+  margin-top: 120px;
+  margin-bottom: 20px;
   background-color:  #ABC9FF;
   padding: 16px;
   border-radius: 16px;

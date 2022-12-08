@@ -62,12 +62,12 @@ nav {
   text-transform: uppercase;
 }
 
-.nav-links li a {
+.nav-links li .aLink {
   text-decoration: none;
   margin: 0 0.7vw;
 }
 
-.nav-links li a:hover {
+.nav-links li .aLink:hover {
   color: #ABC9FF;
 }
 
@@ -75,11 +75,11 @@ nav {
   position: relative;
 }
 
-.nav-links li a {
+.nav-links li .aLink {
   color: #f6f9fb;
 }
 
-.nav-links li a::before {
+.nav-links li .aLink::before {
   content: "";
   display: block;
   height: 3px;
@@ -90,7 +90,7 @@ nav {
   margin: 0 0 0 10%;
 }
 
-.nav-links li a:hover::before {
+.nav-links li .aLink:hover::before {
   width: 80%;
 }
 
@@ -144,25 +144,46 @@ nav {
 /*Stying for small screens*/
 @media screen and (max-width: 700px) {
   nav {
-      position: fixed;
-      z-index: 3;
+    position: fixed;
+    z-index: 3;
   }
 
   .hamburger {
-      display: block;
-      position: absolute;
-      right: 5%;
-      top: 50%;
-      transform: translate(-5%, -50%);
-      z-index: 2;
+    display: block;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+    cursor: pointer;
   }
 
   .nav-links {
-      position: fixed;
-      background: #131418;
-      height: 100vh;
-      width: 100%;
-      display: none;
+    display:none;
+  }
+
+  .nav-links.open {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    height: 360px;
+    background-color: #000;
+  }
+
+  .nav-links li {
+    text-align: center;
+    margin: 1rem;
+  }
+
+  .nav-links li .aLink {
+    color: white;
+    width: 100%;
   }
 }
 
@@ -204,14 +225,14 @@ nav {
 
 @media (max-width:720px) {
   .footer {
-      text-align: left;
-      padding: 5%;
+    text-align: left;
+    padding: 5%;
   }
 
   .footer .ft-row ul li {
-      display: block;
-      margin: 10px 0px;
-      text-align: left;
+    display: block;
+    margin: 10px 0px;
+    text-align: left;
   }
 }
 
@@ -230,12 +251,14 @@ nav {
 }
 
 a {
-  text-decoration: none !important; /* NEED TO CHECK */
+  text-decoration: none !important;
+  /* NEED TO CHECK */
 }
 
 .fa {
   color: red;
 }
+
 /* NEED TO CHECK */
 
 
@@ -271,7 +294,7 @@ hr.dotted {
 
 @media (max-width:720px) {
   #header-txt {
-      display: none;
+    display: none;
   }
 }
 
@@ -292,8 +315,8 @@ hr.dotted {
 
 @media (max-width:900px) {
   .homepage p {
-      margin-left: 0%;
-      margin-right: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
   }
 }
 
@@ -320,7 +343,7 @@ hr.dotted {
   list-style: none;
 }
 
-.start-qz li a{
+.start-qz li a {
   text-decoration: none;
   font-weight: bold;
   font-size: 2.5rem;
@@ -338,7 +361,7 @@ hr.dotted {
 
 @media (max-width:850px) {
   .start-qz a {
-      font-size: 100%;
+    font-size: 100%;
   }
 }
 
@@ -455,8 +478,8 @@ hr.dotted {
 
 @media(max-width: 756px) {
   .card {
-      flex-direction: column;
-      height: auto;
+    flex-direction: column;
+    height: auto;
   }
 }
 
@@ -533,7 +556,8 @@ hr.dotted {
   color: #888;
 }
 
-.card__price, .moneySign{
+.card__price,
+.moneySign {
   color: #E35354;
   text-align: center;
   font-weight: 700;
@@ -548,22 +572,24 @@ hr.dotted {
   font-size: 1.5rem;
   letter-spacing: 0.2rem;
 }
+
 .order_by {
   margin-bottom: 2rem;
 }
 
-.order_by > p, .filter_by > p {
+.order_by>p,
+.filter_by>p {
   border-bottom: 1px solid #888;
   padding-bottom: 1rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
 }
 
-.order_by > .list {
+.order_by>.list {
   margin-top: 1px;
 }
 
-.order_by > p {
+.order_by>p {
   border-bottom: 1px solid #888;
   padding-bottom: 1rem;
 }
@@ -627,7 +653,7 @@ hr.dotted {
   margin-bottom: 20px;
   width: 80%;
   height: auto;
-  background-color:  darkblue;
+  background-color: darkblue;
   padding: 16px;
   border-radius: 16px;
   color: white;
@@ -660,7 +686,7 @@ hr.dotted {
   width: 50%;
   height: auto;
   margin-top: 64px;
-  background-color:  #ABC9FF;
+  background-color: #ABC9FF;
   padding: 16px;
   border-radius: 16px;
   color: white;
@@ -678,5 +704,3 @@ hr.dotted {
   font-weight: bold;
   border-radius: 24px;
 }
-
-

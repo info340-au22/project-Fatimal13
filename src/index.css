@@ -679,4 +679,11 @@ hr.dotted {
   border-radius: 24px;
 }
 
+.formquestion {
+  margin-left: 3rem;
+  margin-bottom: 1.5rem;
+}
 
+.formquestion label{
+  margin: 1rem;
+}

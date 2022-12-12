@@ -4,9 +4,9 @@ export function About(props) {
   return (
     <div>
       <header className="about">
-        <div id="about-image">
+        <div className="about-image">
           <img src="img/header-photo.png" alt="hawaiian islands" />
-          <h1 id="about-txt">ABOUT US</h1>
+          <h1 className="about-txt">ABOUT US</h1>
         </div>
       </header>
       <div className="about-body">

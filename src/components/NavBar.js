@@ -20,7 +20,7 @@ export function NavBar(props) {
   return (
     <nav className="navigation">
     <div className="logo">
-      <img src="img/logo.jpg" alt="Logo" />
+      <img src="img/nav-bar-pic.png" alt="Logo" />
     </div>
     <div className="hamburger" onClick={handleClick}>
       <div className="line1"></div>

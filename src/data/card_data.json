@@ -1,5 +1,5 @@
 [
-  { "cardId": 1,
+  {
     "title": "Paia Inn",
     "rating": 4,
     "description": "Stylish hotel featuring quarters with bamboo floors & patios, plus free loaner beach gear.",
@@ -46,24 +46,7 @@
       "Airport shuttle",
       "Kid-friendly"
     ],
-    "island": "Hawaii (Big Island)",
-    "price": "$$$",
-    "category" : "hotel"
-  },
-  {
-    "cardId": 4,
-    "title": "Paia Inn",
-    "rating": "4.9",
-    "description": "Stylish hotel featuring quarters with bamboo floors & patios, plus free loaner beach gear.",
-    "cardImg": "/img/hotels/paiainn.jpg",
-    "tags": [
-      "Free Wi-Fi",
-      "Air conditioning",
-      "Fitness center",
-      "Bar",
-      "Beach access"
-    ],
-    "island": "Hawaii",
+    "island": "Hawai'i",
     "price": "$$$",
     "category" : "hotel"
   },
@@ -105,7 +88,7 @@
     "title": "Tiki Moon Villas",
     "rating": 4,
     "description": "Relaxed villas with patios by the beach, plus free parking & boogie board rentals.",
-    "cardImg": "img/hotels/keikibeach.jpg",
+    "cardImg": "img/hotels/tikimoonvillas.jpg",
     "tags": [
       "Free Wi-Fi",
       "Beach front",
@@ -130,7 +113,7 @@
       "Restaurant",
       "Airport shuttle"
     ],
-    "island": "Molokai",
+    "island": "Moloka‘i",
     "price": "$$",
     "category" : "hotel"
   },
@@ -161,8 +144,7 @@
       "Oceanfront",
       "Luau",
       "Food",
-      "Culture",
-      "Hawai'i Island"
+      "Culture"
     ],
     "island": "Hawai'i",
     "price": "$$$",
@@ -178,8 +160,7 @@
       "Oceanfront",
       "Luau",
       "Live Music",
-      "Culture",
-      "Oahu Island"
+      "Culture"
     ],
     "island": "Oahu",
     "price": "$$$$",
@@ -190,13 +171,12 @@
     "title": "Old Lahaina Lū‘au",
     "rating": 5,
     "description": "Old Lahaina Lū‘au",
-    "cardImg": "img/oldlahaina.webp",
+    "cardImg": "img/oldlahaina.jpg",
     "tags": [
       "Beachside",
       "Luau",
       "Food",
-      "Culture",
-      "Maui Island"
+      "Culture"
     ],
     "island": "Maui",
     "price": "$$$",
@@ -212,8 +192,7 @@
       "Waterside",
       "Luau",
       "Food",
-      "Culture",
-      "Kaua'i Island"
+      "Culture"
     ],
     "island": "Kaua'i",
     "price": "$$$$",
@@ -229,10 +208,9 @@
       "Nature",
       "Tour",
       "Historical",
-      "Culture",
-      "Lāna‘i and Moloka‘i Island"
+      "Culture"
     ],
-    "island": "Lāna‘i and Moloka‘i",
+    "island": "Lāna‘i",
     "price": "$$",
     "category" : "activity"
   },
@@ -246,8 +224,7 @@
       "Seafood",
       "View Access",
       "Grill",
-      "Bar",
-      "Hawai'i Island"
+      "Bar"
     ],
     "island": "Hawai'i",
     "price": "$$",
@@ -258,13 +235,12 @@
     "title": "Merriman’s Honolulu",
     "rating": 4,
     "description": "Merriman’s Honolulu",
-    "cardImg": "img/merrimans.jpeg",
+    "cardImg": "img/merrimans.jpg",
     "tags": [
       "Seafood",
       "View Access",
       "Live Music",
-      "Dine In",
-      "Oahu Island"
+      "Dine In"
     ],
     "island": "Oahu",
     "price": "$$",
@@ -280,15 +256,14 @@
       "Seafood",
       "View Access",
       "Bar",
-      "Grill",
-      "Hawaiʻi Island"
+      "Grill"
     ],
     "island": "Hawaiʻi",
     "price": "$$$",
     "category" : "dining"
   },
   {
-    "cardId": 17,
+    "cardId": 18,
     "title": "Lahaina Grill",
     "rating": 5,
     "description": "Lahaina Grill",
@@ -297,8 +272,7 @@
       "Seafood",
       "Art",
       "Winery",
-      "Elegant",
-      "Maui Island"
+      "Elegant"
     ],
     "island": "Maui",
     "price": "$$$$",

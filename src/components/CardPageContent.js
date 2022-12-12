@@ -3,9 +3,9 @@ import React, { useState } from 'react';
 import _ from 'lodash'; //import external library!
 
 import { CardItems } from './CardItems.js'
-import { Filter } from './Filter.js';
+import { CardFilter } from './CardFilter.js';
 
-export function PageContent(props) {
+export function CardPageContent(props) {
   let pageCardData = props.pageCardData
 
   // getting unique values for the filter
@@ -47,7 +47,7 @@ export function PageContent(props) {
     const element = (
       <CardItems
         cardData={cardObj}
-        key={cardObj.cardId} />
+        key={cardObj.title} />
     )
     return element;
   })
@@ -57,7 +57,7 @@ export function PageContent(props) {
       <div className="container">
         <div className="row">
           <div className="col-md-4">
-            <Filter 
+            <CardFilter 
             cardData={pageCardData}
             sortByCallback={sortByCallback}
             tags={uniqueTags}

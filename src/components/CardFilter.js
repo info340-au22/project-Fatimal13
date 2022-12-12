@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import _ from 'lodash'; //import external library!
 
 
-export function Filter(props) {
+export function CardFilter(props) {
 
   return (
     <div className="border">
@@ -24,6 +24,7 @@ export function Filter(props) {
     </div>
   )
 }
+
 
 
 
@@ -98,6 +99,8 @@ function SortButton(props) {
     </button>
   );
 }
+
+
 
 
 

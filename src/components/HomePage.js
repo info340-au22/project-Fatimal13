@@ -6,25 +6,20 @@ export function HomePage(props) {
     return (
       <div>
         <header className="index">
-          <div id="header-image">
+          <div className="header-image">
             <img src="img/header-photo.png" alt="Hawaiian Island" />
-            <h1 id="header-txt">
-              [LOGO]
-            </h1>
           </div>
         </header>
-  
+
         <main>
-  
           <hr className="dotted" />
-  
+
           <div className="homepage">
             <h2>WHAT IS SHOP LOCAL HAWAI'I?</h2>
             <p>
               The tourism industry fuels the Hawaiian economy, however, with millions of tourists entering the state each year
               it is critical for the native population and environment that tourists spend their money at local, Hawaiian
-              owned
-              businesses. Rather than supporting foreign tourism companies that do not help support the local population and
+              owned businesses. Rather than supporting foreign tourism companies that do not help support the local population and
               disregard the urbanizing effects of their efforts, visitors should be well educated on the sustainable,
               locally-run businesses that are accessible to them on the islands. Our mission is to provide tourists with the
               resources to plan their next trip to Hawai'i around locally-owned businesses, in order to support the indegenous
@@ -37,10 +32,10 @@ export function HomePage(props) {
   
             <h2>WHICH ISLAND SHOULD YOU VISIT?</h2>
             <p>Take our quiz to find out and start planning your next Hawai'i trip!</p>
-            <div class="map-quiz">
+            <div className="map-quiz">
               <img src="https://www.kindpng.com/picc/m/276-2765159_dronegenuity-hawaiian-islands-hd-png-download.png"
-                alt="Dronegenuity - Hawaiian Islands, HD Png Download@kindpng.com" />
-              <div class="start-qz">
+                alt="Hawaiian Islands" />
+              <div className="start-qz">
                 <li><Link to="/quiz">START QUIZ!</Link></li>
               </div>
             </div>
@@ -58,7 +53,7 @@ export function HomePage(props) {
                     <img src="img/index-cards/restaurant-card.jpg" alt="Hotel" />
                   </div>
                   <div className="lm-card-txt">
-                    <a href="dinning.html">DINING</a>
+                    <Link to="/dinings">DINING</Link>
                   </div>
                 </div>
   
@@ -67,7 +62,7 @@ export function HomePage(props) {
                     <img src="img/index-cards/hotel-card.jpg" alt="Hotel" />
                   </div>
                   <div className="lm-card-txt">
-                    <a href="hotels.html">HOTELS</a>
+                    <Link to="/hotels">HOTELS</Link>
                   </div>
                 </div>
   
@@ -76,7 +71,7 @@ export function HomePage(props) {
                     <img src="img/index-cards/activity-card.jpg" alt="Hotel" />
                   </div>
                   <div className="lm-card-txt">
-                    <a href="activities.html">ACTIVITIES</a>
+                    <Link to="/activities">ACTIVITIES</Link>
                   </div>
                 </div>
               </div>

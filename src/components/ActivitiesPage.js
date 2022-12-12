@@ -1,7 +1,7 @@
 
 import React from 'react';
 
-import { PageContent } from './PageContent.js';
+import { CardPageContent } from './CardPageContent.js';
 
 export function ActivitiesPage(props) {
   // [DATA] getting only cards belong that page
@@ -13,7 +13,7 @@ export function ActivitiesPage(props) {
       <header>
         <h1>ACTIVITIES</h1>
       </header>
-      <PageContent pageCardData={pageCardData} />
+      <CardPageContent pageCardData={pageCardData} />
     </div>
   )
 }

@@ -17,15 +17,16 @@ export function FormPage(props) {
 
   return (
     <div>
-      <header>
-        <h1>FORM</h1>
-      </header>
-      <div className="input-group">
+    <div>
+    <header>
+      <h1 className="form-txt-1">Register your business below!</h1>
+      <h2 className="form-txt-2">Fill out the form below to have your locally owned, Hawaiian business promoted on our site.</h2>
+    </header>
         <FormComponents 
           uniqueTags={uniqueTags}
           addNewCardCallback={props.addNewCardCallback}
           currentUser={props.currentUser}/>
-      </div>
+    </div>
     </div>
   )
 }

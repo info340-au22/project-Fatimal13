@@ -60,8 +60,7 @@ export function Quiz(props) {
                     <h2>
                         Question: {currentQuestion + 1} out of {questions.length}
                     </h2>
-                    <h3>Current Score: {score}</h3>
-                    <h4 className="question-text">{questions[currentQuestion].text}</h4>
+                    <h3 className="question-text">{questions[currentQuestion].text}</h3>
 
                     <ul className="quiz-ul">
                         {questions[currentQuestion].options.map((option) => {
@@ -75,6 +74,7 @@ export function Quiz(props) {
                             );
                         })}
                     </ul>
+                    <li><span>Data Sourced from Expedia</span></li>
                 </div>
             )}
         </div>

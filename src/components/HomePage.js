@@ -31,7 +31,7 @@ export function HomePage(props) {
             <hr className="dotted" />
   
             <h2>HOW MUCH DO YOU KNOW ABOUT HAWAII?</h2>
-            <p>Take our quiz to find out and learn the history of the Hawai'i Kingdom!</p>
+            <p>Take our quiz to find out and learn the history of the Kingdom of Hawai'i!</p>
             <div className="map-quiz">
               <img src="img/hawaii-map-new.png" alt="map of Hawaiian Islands"/>
               <div className="start-qz">

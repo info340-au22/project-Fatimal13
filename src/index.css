@@ -625,7 +625,7 @@ hr.dotted {
   margin-bottom: 20px;
   width: 80%;
   height: auto;
-  background-color: darkblue;
+  background-color: #8db2f7;
   padding: 16px;
   border-radius: 16px;
   color: white;
@@ -653,9 +653,22 @@ hr.dotted {
   font-size: 24px;
 }
 
+.quiz-result {
+  font-weight: 700;
+}
+.final-results > h4 {
+  font-size: 15px;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.final-results > h3 {
+  padding-top: 1rem;
+}
+
 .final-results {
   margin: 0 auto;
-  width: 50%;
+  width: 70%;
   height: auto;
   margin-top: 120px;
   margin-bottom: 20px;
@@ -666,7 +679,7 @@ hr.dotted {
 }
 
 .quiz-button {
-  background-color: red;
+  background-color: rgb(115, 134, 247);
   border: none;
   color: white;
   padding: 16px 24px;
@@ -692,47 +705,32 @@ a {
 }
 
 /* Form */
-.input-group {
-  flex: 1 0 100px;
-  background: #d4e1f9;
-  padding: 10px;
-  border-radius: 15px;
-  box-shadow: 0 5px 10px black;
-  align-self: normal;
-  width: 60%;
-  align-items: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 35px;
-  }
-  
-  .formquestion {
-  margin-left: 3rem;
-  margin-bottom: 1.5rem;
-  }
-  
-  .form-txt-1 {
-  font-weight: bold;
-  }
-  
-  .form-txt-2 {
-  font-size: 1em;
-  }
-  
-  .formquestion {
-  margin-left: 3rem;
-  margin-bottom: 1.5rem;
-  }
-  
-  .formquestion label{
-  margin: 1rem;
-  }
-  
-  input:focus {
-  background-color: #a8c3f5;
-  }
-  
-  .form-control:focus {
-  background-color: #a8c3f5;
-  }
+.formquestion > label {
+  padding-right: 1rem;
+}
+
+.form-select {
+  width:50%;
+}
+
+.formquestion {
+margin-left: 3rem;
+margin-bottom: 1.5rem;
+padding-bottom: 1rem;
+}
+
+.form-txt-1 {
+font-weight: bold;
+}
+
+.form-txt-2 {
+font-size: 1em;
+}
+
+input:focus {
+background-color: #a8c3f5;
+}
+
+.form-control:focus {
+background-color: #a8c3f5;
+}

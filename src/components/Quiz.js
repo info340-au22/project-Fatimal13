@@ -30,13 +30,14 @@ export function Quiz(props) {
 
             {showResults ? (
                 <div className="final-results">
-                    <h1>Quiz Results!</h1>
-                    <h2>
+                    <h1 className = "quiz-result">Quiz Results!</h1>
+                    <h2 className = "quiz-result">
                         {score} out of {questions.length} correct - (
                         {Math.round((score / questions.length) * 100)}%)
                     </h2>
                     <h3>
-                        Thank you for taking our quiz! Hopefully you were able to gain some valuable insights about native
+                        Thank you for taking our quiz!
+                        Hopefully you were able to gain some valuable insights about native
                         Hawaiian history and culture.
                     </h3>
                     <h4>

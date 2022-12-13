@@ -93,9 +93,6 @@ function FormComponents(props) {
 
   //image uploading!
   const handleChange = (event) => {
-    // if (!imageFile) {
-    //   event.target.files = null
-    // }
 
     if(event.target.files.length > 0 && event.target.files[0]) {
       const imageFile = event.target.files[0]
@@ -122,7 +119,6 @@ function FormComponents(props) {
 
     const rating = Math.floor(Math.random() * 6);
     const tagsArray = selectedTags.map(x => x.value);
-    // console.log(tagsArray)
 
     const newBusiness = {
       "firstName" : typedFNameInput,
@@ -233,11 +229,14 @@ function FormComponents(props) {
 
         <div className='formquestion col-auto'>
           <label> Tags: </label>
-          <Select
-            isMulti={true}
-            value={selectedTags}
-            onChange={handleSelectedTags}
-            options={tagOptionsArray} />
+          <div className="form-select">
+            <Select
+              isMulti={true}
+              value={selectedTags}
+              onChange={handleSelectedTags}
+              options={tagOptionsArray} />
+          </div>
+
         </div>
 
         <div className='formquestion col-auto'>
@@ -269,7 +268,7 @@ function FormComponents(props) {
           <input type="file" name="image" id="imageUploadInput" onChange={handleChange} />
         </div>
         {!isComplete && <div className="ms-5 alert alert-danger">Please double check if every box is completed.</div>}
-        <button className="formquestion btn btn-primary" type="submit"> Submit form </button>
+        <button className="formquestion btn btn-primary" aria-label="Button to submit form" type="submit"> Submit form </button>
       </form>
     </div>
   )

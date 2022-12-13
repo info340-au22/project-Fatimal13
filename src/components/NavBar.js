@@ -34,7 +34,6 @@ export function NavBar(props) {
         <li><Link to="/activities"><span className="aLink" onClick={handleClick}>ACTIVITIES</span></Link></li>
         <li><Link to="/about"><span className="aLink" onClick={handleClick}>ABOUT</span></Link></li>
         
-        {/* send currentUser as a prop */}
         {currentUser.userId &&
           <li className="nav-item">
             <button className="login-button" onClick={handleSignOut}>Sign Out</button>

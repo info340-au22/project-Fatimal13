@@ -36,7 +36,7 @@ export function HomePage(props) {
               <img src="https://www.kindpng.com/picc/m/276-2765159_dronegenuity-hawaiian-islands-hd-png-download.png"
                 alt="Hawaiian Islands" />
               <div className="start-qz">
-                <li><Link to="/quiz">START QUIZ!</Link></li>
+                <li aria-label="link to the quiz page"><Link to="/quiz">START QUIZ!</Link></li>
               </div>
             </div>
   
@@ -50,7 +50,7 @@ export function HomePage(props) {
   
                 <div className="lm-card">
                   <div className="lm-card-img">
-                    <img src="img/index-cards/restaurant-card.jpg" alt="Hotel" />
+                    <img src="img/index-cards/restaurant-card.jpg" alt="authentic hawaiian food" />
                   </div>
                   <div className="lm-card-txt">
                     <Link to="/dinings">DINING</Link>
@@ -59,7 +59,7 @@ export function HomePage(props) {
   
                 <div className="lm-card">
                   <div className="lm-card-img">
-                    <img src="img/index-cards/hotel-card.jpg" alt="Hotel" />
+                    <img src="img/index-cards/hotel-card.jpg" alt="beach front hotel" />
                   </div>
                   <div className="lm-card-txt">
                     <Link to="/hotels">HOTELS</Link>
@@ -68,7 +68,7 @@ export function HomePage(props) {
   
                 <div className="lm-card">
                   <div className="lm-card-img">
-                    <img src="img/index-cards/activity-card.jpg" alt="Hotel" />
+                    <img src="img/index-cards/activity-card.jpg" alt="water sports" />
                   </div>
                   <div className="lm-card-txt">
                     <Link to="/activities">ACTIVITIES</Link>

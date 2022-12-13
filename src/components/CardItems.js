@@ -2,7 +2,6 @@ import React from 'react';
 
 
 export function CardItems(props) {
-  // console.log(props, "cardItems")
   const { title, rating, description, cardImg, tags, island, price } = props.cardData;
 
   const tagsArray = tags.map((item) => {
@@ -19,7 +18,7 @@ export function CardItems(props) {
           <img className="card__img-preview" src={cardImg} alt={title} />
         </div>
         <div className="card__content">
-          <h4 className="card__title"><a href="#">{title}</a></h4>
+          <h4 className="card__title">{title}</h4>
           <p className="card__text"> {rating} &#11088; </p>
           <p className="card__description">{description}</p>
           <div className="card__tags">

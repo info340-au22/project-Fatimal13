@@ -72,11 +72,8 @@ export default function App(props) {
 
   // create addnewCard call back function
   const addNewCard = (newCardObj) => {
-    // const updateCards = [...cardData, newCardObj];
-    //modify the database content
     const db = getDatabase();
     const allCardsRef = ref(db, "allCards"); // add allCards
-    //                where       what
     firebasePush(allCardsRef, newCardObj);
   };
 

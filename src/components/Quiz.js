@@ -74,7 +74,7 @@ export function Quiz(props) {
                             );
                         })}
                     </ul>
-                    <li><span>Data Sourced from Expedia</span></li>
+                    <li><span>Data Sourced from Only In Your State - Hawaii</span></li>
                 </div>
             )}
         </div>

@@ -568,6 +568,14 @@ hr.dotted {
 }
 
 /* About */
+
+.about-body {
+  padding: 2rem;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  }
+  
 .about-image {
   top: 10px;
   position: relative;
@@ -679,11 +687,52 @@ hr.dotted {
   height: 300px
 }
 
-.about-body {
-  padding: 2rem;
-}
-
 a {
   text-decoration: none;
 }
 
+/* Form */
+.input-group {
+  flex: 1 0 100px;
+  background: #d4e1f9;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px black;
+  align-self: normal;
+  width: 60%;
+  align-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 35px;
+  }
+  
+  .formquestion {
+  margin-left: 3rem;
+  margin-bottom: 1.5rem;
+  }
+  
+  .form-txt-1 {
+  font-weight: bold;
+  }
+  
+  .form-txt-2 {
+  font-size: 1em;
+  }
+  
+  .formquestion {
+  margin-left: 3rem;
+  margin-bottom: 1.5rem;
+  }
+  
+  .formquestion label{
+  margin: 1rem;
+  }
+  
+  input:focus {
+  background-color: #a8c3f5;
+  }
+  
+  .form-control:focus {
+  background-color: #a8c3f5;
+  }

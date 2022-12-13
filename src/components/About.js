@@ -9,8 +9,9 @@ export function About(props) {
           <h1 className="about-txt">ABOUT US</h1>
         </div>
       </header>
-      <div className="about-body">
-        <section >
+      <div>
+      <hr className="dotted" />
+        <section className="about-body">
           <h2>Our Why</h2>
           <p>
             The tourism industry fuels the Hawaiian economy, however, with millions of tourists entering the state each
@@ -26,8 +27,8 @@ export function About(props) {
             population.
           </p>
         </section>
-
-        <section>
+        <hr className="dotted" />
+        <section  className="about-body">
           <h2>Purpose & Impact</h2>
           <p>
             This app will help shorten the inequality gap for Native Hawaiians who unproportionally bear the negative
@@ -37,8 +38,8 @@ export function About(props) {
             awareness of the importance of supporting local because it actually help people living in the community.
           </p>
         </section>
-
-        <section>
+        <hr className="dotted" />
+        <section  className="about-body">
           <h2>Contact The Team</h2>
           <p> Elisabeth Helleberg: ehelle@uw.edu</p>
           <p> Fatima Laghari: fatimal1@uw.edu</p>

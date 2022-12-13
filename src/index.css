@@ -185,6 +185,18 @@ nav {
     color: white;
     width: 100%;
   }
+
+  .startquiz-button {
+    padding: 1em;
+    font-size: 1rem;
+    top: -5px;
+    left: -90px;
+    height: fit-content;
+    border-radius: 5px;
+    position: relative;
+    text-decoration: none;
+  }
+
 }
 
 
@@ -204,13 +216,13 @@ nav {
   font-size: 0.8em;
 }
 
-.footer .ft-row a {
+.footer .ft-row Link {
   text-decoration: none;
   color: gray;
   transition: 0.5s;
 }
 
-.footer .ft-row a:hover {
+.footer .ft-row Link:hover {
   color: #fff;
 }
 
@@ -225,14 +237,14 @@ nav {
 
 @media (max-width:720px) {
   .footer {
-    text-align: left;
+    text-align: center;
     padding: 5%;
   }
 
   .footer .ft-row ul li {
-    display: block;
-    margin: 10px 0px;
-    text-align: left;
+    display: inline;
+    margin: 10px 5px;
+    text-align: center;
   }
 }
 
@@ -295,22 +307,22 @@ hr.dotted {
 
 .map-quiz img {
   display: flex;
-  width: 60%;
+  width: 80%;
   height: 75%;
   margin-left: auto;
   margin-right: auto;
-  opacity: .3;
+  opacity: .65;
 }
 
 .map-quiz .start-qz {
   padding: 10px;
-  top: 60%;
-  left: 20%;
+  top: 70%;
+  left: 25%;
   position: absolute;
   list-style: none;
 }
 
-.start-qz li a {
+.start-qz li a{
   text-decoration: none;
   font-weight: bold;
   font-size: 2.5rem;
@@ -322,7 +334,7 @@ hr.dotted {
   box-shadow: 0 5px 10px #6699f7;
 }
 
-.start-qz a:hover {
+.start-qz:a hover {
   box-shadow: 0 10px 15px #6699f7;
 }
 
@@ -678,11 +690,6 @@ hr.dotted {
   border-radius: 24px;
 }
 
-.formquestion {
-  margin-left: 3rem;
-  margin-bottom: 1.5rem;
-}
-
 .signin-container {
   height: 300px
 }
@@ -707,11 +714,6 @@ a {
   margin-bottom: 35px;
   }
   
-  .formquestion {
-  margin-left: 3rem;
-  margin-bottom: 1.5rem;
-  }
-  
   .form-txt-1 {
   font-weight: bold;
   }
@@ -720,15 +722,19 @@ a {
   font-size: 1em;
   }
   
-  .formquestion {
-  margin-left: 3rem;
-  margin-bottom: 1.5rem;
-  }
-  
   .formquestion label{
   margin: 1rem;
   }
-  
+
+  .formquestion {
+    margin-left: 3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .form-select{
+    width: 50%;
+  }
+
   input:focus {
   background-color: #a8c3f5;
   }

@@ -30,13 +30,12 @@ export function HomePage(props) {
   
             <hr className="dotted" />
   
-            <h2>WHICH ISLAND SHOULD YOU VISIT?</h2>
-            <p>Take our quiz to find out and start planning your next Hawai'i trip!</p>
+            <h2>HOW MUCH DO YOU KNOW ABOUT HAWAII?</h2>
+            <p>Take our quiz to find out and learn the history of the Hawai'i Kingdom!</p>
             <div className="map-quiz">
-              <img src="https://www.kindpng.com/picc/m/276-2765159_dronegenuity-hawaiian-islands-hd-png-download.png"
-                alt="Hawaiian Islands" />
+              <img src="img/hawaii-map-new.png" alt="map of Hawaiian Islands"/>
               <div className="start-qz">
-                <li><Link to="/quiz">START QUIZ!</Link></li>
+                <li className="startquiz-button"><Link to="/quiz">START QUIZ!</Link></li>
               </div>
             </div>
   

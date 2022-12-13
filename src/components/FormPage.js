@@ -161,11 +161,12 @@ function FormComponents(props) {
       
       <form onSubmit={handleSubmit}>
 
-        <div className='formquestion mb-3'>
+        <div className='formquestion'>
           <label>First name: </label>
           <input type='text'
             value={typedFNameInput}
             onChange={handleFNameChange}
+            placeholder={"Kalani"}
             required />
         </div>
 
@@ -175,6 +176,7 @@ function FormComponents(props) {
             type='text'
             value={typedLNameInput}
             onChange={handleLNameChange}
+            placeholder={"Kai"}
             required />
         </div>
 
@@ -192,7 +194,7 @@ function FormComponents(props) {
           <label>Phone number: </label>
           <input
             type="tel"
-            placeholder={"000-000-0000"}
+            placeholder={"808-000-0000"}
             value={typedPhoneInput}
             onChange={handlePhoneChange}
             required />
@@ -204,10 +206,11 @@ function FormComponents(props) {
             type="text"
             value={typedBizNameInput}
             onChange={handleBizNameChange}
+            placeholder={"Business Name"}
             required />
         </div>
 
-        <div className='formquestion col-auto'>
+        <div className='formquestion'>
           <label> Business Type: </label>
           <select className="form-select"
             value={selectedBizCategory}
@@ -220,7 +223,7 @@ function FormComponents(props) {
           </select>
         </div>
 
-        <div className='formquestion col-auto'>
+        <div className='formquestion'>
           <label> Price: </label>
           <select className="form-select" value={selectedPrice} onChange={handlePriceChange} >
             <option value="">Select the price range</option>
@@ -231,16 +234,17 @@ function FormComponents(props) {
           </select>
         </div>
 
-        <div className='formquestion col-auto'>
+        <div className='formquestion'>
           <label> Tags: </label>
-          <Select
+          <Select className="form-select"
             isMulti={true}
             value={selectedTags}
             onChange={handleSelectedTags}
-            options={tagOptionsArray} />
+            options={tagOptionsArray} 
+          />
         </div>
 
-        <div className='formquestion col-auto'>
+        <div className='formquestion'>
           <label> Business Location:   </label>
           <select id='businessLoc' className="form-select" 
             value={selectedIsland} onChange={handleBizIslandChange} >

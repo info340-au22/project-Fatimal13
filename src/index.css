@@ -631,13 +631,17 @@ hr.dotted {
   text-align: center;
 }
 
+.Quiz h4 {
+  font-size: 1.2em;
+}
+
 .quiz-card {
   margin: 0 auto;
   margin-top: 120px;
   margin-bottom: 20px;
   width: 80%;
   height: auto;
-  background-color: darkblue;
+  background-color: #ABC9FF;
   padding: 16px;
   border-radius: 16px;
   color: white;
@@ -649,7 +653,7 @@ hr.dotted {
 
 .quiz-li {
   margin-top: 8px;
-  background-color: #ABC9FF;
+  background-color: #95b2de;
   padding: 16px;
   border: 3px solid white;
   border-radius: 20px;
@@ -667,12 +671,12 @@ hr.dotted {
 
 .final-results {
   margin: 0 auto;
-  width: 50%;
+  width: 80%;
   height: auto;
   margin-top: 120px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   background-color:  #ABC9FF;
-  padding: 16px;
+  padding: 20px;
   border-radius: 16px;
   color: white;
 }

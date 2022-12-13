@@ -35,10 +35,12 @@ export function Quiz(props) {
                         {score} out of {questions.length} correct - (
                         {Math.round((score / questions.length) * 100)}%)
                     </h2>
+                    <br></br>
                     <h3>
                         Thank you for taking our quiz! Hopefully you were able to gain some valuable insights about native
                         Hawaiian history and culture.
                     </h3>
+                    <hr className="dotted" />
                     <h4>
                         When Hawai’i was illegally overthrown by the United States in January of 1893, over 1.2 million acres
                         of native land was seized and their monarchy was annexed. The Hawaiian language was banned from being
